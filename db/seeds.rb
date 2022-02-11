@@ -74,5 +74,5 @@ unless Rails.env.production?
   # csat
   Seeders::MessageSeeder.create_sample_csat_collect_message conversation
 
-  CannedResponse.create!(account: account, short_code: 'start', content: 'Hello welcome to chatwoot.')
+  CannedResponse.create!(account: account, short_code: 'start', content: 'Hello welcome to Bonsai.')
 end

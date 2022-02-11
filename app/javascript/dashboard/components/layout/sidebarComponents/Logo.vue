@@ -39,8 +39,8 @@ $logo-size: 32px;
   img {
     width: $logo-size;
     height: $logo-size;
-    object-fit: cover;
-    object-position: left center;
+    object-fit: contain;
+    object-position: center;
   }
 }
 </style>
