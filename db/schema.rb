@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_01_31_081750) do
+ActiveRecord::Schema.define(version: 2022_02_13_061828) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_stat_statements"
@@ -53,6 +53,7 @@ ActiveRecord::Schema.define(version: 2022_01_31_081750) do
     t.integer "feature_flags", default: 0, null: false
     t.integer "auto_resolve_duration"
     t.jsonb "limits", default: {}
+    t.string "stripe_id"
   end
 
   create_table "action_mailbox_inbound_emails", force: :cascade do |t|
@@ -557,6 +558,12 @@ ActiveRecord::Schema.define(version: 2022_01_31_081750) do
     t.datetime "updated_at", precision: 6, null: false
     t.index ["account_id"], name: "index_labels_on_account_id"
     t.index ["title", "account_id"], name: "index_labels_on_title_and_account_id", unique: true
+  end
+
+  create_table "macros", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "mentions", force: :cascade do |t|

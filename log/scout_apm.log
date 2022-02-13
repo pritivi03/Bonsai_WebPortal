@@ -67,3 +67,96 @@
 [02/10/22 14:19:53 -0600 Jatins-MacBook-Pro.local (15033)] INFO : Not Loading Instruments
 [02/10/22 14:19:53 -0600 Jatins-MacBook-Pro.local (15033)] INFO : Scout Agent [4.1.2] Installed
 [02/10/22 14:19:53 -0600 Jatins-MacBook-Pro.local (15033)] INFO : Monitoring isn't enabled for the [development] environment.
+[02/12/22 16:02:05 -0600 Jatins-MacBook-Pro.local (70160)] INFO : No configuration file loaded, and no configuration found in ENV. For assistance configuring Scout, visit https://docs.scoutapm.com/#ruby-configuration-options
+[02/12/22 16:02:05 -0600 Jatins-MacBook-Pro.local (70160)] INFO : Scout Agent [4.1.2] Initialized
+[02/12/22 16:02:05 -0600 Jatins-MacBook-Pro.local (70160)] INFO : Not Loading Instruments
+[02/12/22 16:02:05 -0600 Jatins-MacBook-Pro.local (70160)] INFO : Scout Agent [4.1.2] Installed
+[02/12/22 16:02:05 -0600 Jatins-MacBook-Pro.local (70160)] INFO : Monitoring isn't enabled for the [development] environment.
+[02/12/22 16:02:05 -0600 Jatins-MacBook-Pro.local (70160)] INFO : Deferring agent start. Standing by for first request
+[02/12/22 16:02:05 -0600 Jatins-MacBook-Pro.local (70161)] INFO : No configuration file loaded, and no configuration found in ENV. For assistance configuring Scout, visit https://docs.scoutapm.com/#ruby-configuration-options
+[02/12/22 16:02:05 -0600 Jatins-MacBook-Pro.local (70161)] INFO : Scout Agent [4.1.2] Initialized
+[02/12/22 16:02:05 -0600 Jatins-MacBook-Pro.local (70161)] INFO : Not Loading Instruments
+[02/12/22 16:02:05 -0600 Jatins-MacBook-Pro.local (70161)] INFO : Scout Agent [4.1.2] Installed
+[02/12/22 16:02:05 -0600 Jatins-MacBook-Pro.local (70161)] INFO : Monitoring isn't enabled for the [development] environment.
+[02/12/22 22:53:00 -0600 Jatins-MacBook-Pro.local (77843)] INFO : No configuration file loaded, and no configuration found in ENV. For assistance configuring Scout, visit https://docs.scoutapm.com/#ruby-configuration-options
+[02/12/22 22:53:00 -0600 Jatins-MacBook-Pro.local (77843)] INFO : Scout Agent [4.1.2] Initialized
+[02/12/22 22:53:00 -0600 Jatins-MacBook-Pro.local (77843)] INFO : Not Loading Instruments
+[02/12/22 22:53:00 -0600 Jatins-MacBook-Pro.local (77843)] INFO : Scout Agent [4.1.2] Installed
+[02/12/22 22:53:00 -0600 Jatins-MacBook-Pro.local (77843)] INFO : Monitoring isn't enabled for the [development] environment.
+[02/12/22 22:53:00 -0600 Jatins-MacBook-Pro.local (77843)] INFO : Deferring agent start. Standing by for first request
+[02/12/22 22:57:55 -0600 Jatins-MacBook-Pro.local (77993)] INFO : No configuration file loaded, and no configuration found in ENV. For assistance configuring Scout, visit https://docs.scoutapm.com/#ruby-configuration-options
+[02/12/22 22:57:55 -0600 Jatins-MacBook-Pro.local (77993)] INFO : Scout Agent [4.1.2] Initialized
+[02/12/22 22:57:55 -0600 Jatins-MacBook-Pro.local (77993)] INFO : Not Loading Instruments
+[02/12/22 22:57:55 -0600 Jatins-MacBook-Pro.local (77993)] INFO : Scout Agent [4.1.2] Installed
+[02/12/22 22:57:55 -0600 Jatins-MacBook-Pro.local (77993)] INFO : Monitoring isn't enabled for the [development] environment.
+[02/12/22 22:57:55 -0600 Jatins-MacBook-Pro.local (77993)] INFO : Deferring agent start. Standing by for first request
+[02/12/22 22:57:56 -0600 Jatins-MacBook-Pro.local (77995)] INFO : No configuration file loaded, and no configuration found in ENV. For assistance configuring Scout, visit https://docs.scoutapm.com/#ruby-configuration-options
+[02/12/22 22:57:56 -0600 Jatins-MacBook-Pro.local (77995)] INFO : Scout Agent [4.1.2] Initialized
+[02/12/22 22:57:56 -0600 Jatins-MacBook-Pro.local (77995)] INFO : Not Loading Instruments
+[02/12/22 22:57:56 -0600 Jatins-MacBook-Pro.local (77995)] INFO : Scout Agent [4.1.2] Installed
+[02/12/22 22:57:56 -0600 Jatins-MacBook-Pro.local (77995)] INFO : Monitoring isn't enabled for the [development] environment.
+[02/12/22 23:00:02 -0600 Jatins-MacBook-Pro.local (78065)] INFO : No configuration file loaded, and no configuration found in ENV. For assistance configuring Scout, visit https://docs.scoutapm.com/#ruby-configuration-options
+[02/12/22 23:00:02 -0600 Jatins-MacBook-Pro.local (78065)] INFO : Scout Agent [4.1.2] Initialized
+[02/12/22 23:00:02 -0600 Jatins-MacBook-Pro.local (78065)] INFO : Not Loading Instruments
+[02/12/22 23:00:02 -0600 Jatins-MacBook-Pro.local (78065)] INFO : Scout Agent [4.1.2] Installed
+[02/12/22 23:00:02 -0600 Jatins-MacBook-Pro.local (78065)] INFO : Monitoring isn't enabled for the [development] environment.
+[02/12/22 23:00:02 -0600 Jatins-MacBook-Pro.local (78065)] INFO : Deferring agent start. Standing by for first request
+[02/12/22 23:00:17 -0600 Jatins-MacBook-Pro.local (78093)] INFO : No configuration file loaded, and no configuration found in ENV. For assistance configuring Scout, visit https://docs.scoutapm.com/#ruby-configuration-options
+[02/12/22 23:00:17 -0600 Jatins-MacBook-Pro.local (78093)] INFO : Scout Agent [4.1.2] Initialized
+[02/12/22 23:00:17 -0600 Jatins-MacBook-Pro.local (78093)] INFO : Not Loading Instruments
+[02/12/22 23:00:17 -0600 Jatins-MacBook-Pro.local (78093)] INFO : Scout Agent [4.1.2] Installed
+[02/12/22 23:00:17 -0600 Jatins-MacBook-Pro.local (78093)] INFO : Monitoring isn't enabled for the [development] environment.
+[02/12/22 23:00:17 -0600 Jatins-MacBook-Pro.local (78093)] INFO : Deferring agent start. Standing by for first request
+[02/12/22 23:01:29 -0600 Jatins-MacBook-Pro.local (78130)] INFO : No configuration file loaded, and no configuration found in ENV. For assistance configuring Scout, visit https://docs.scoutapm.com/#ruby-configuration-options
+[02/12/22 23:01:29 -0600 Jatins-MacBook-Pro.local (78130)] INFO : Scout Agent [4.1.2] Initialized
+[02/12/22 23:01:29 -0600 Jatins-MacBook-Pro.local (78130)] INFO : Not Loading Instruments
+[02/12/22 23:01:29 -0600 Jatins-MacBook-Pro.local (78130)] INFO : Scout Agent [4.1.2] Installed
+[02/12/22 23:01:29 -0600 Jatins-MacBook-Pro.local (78130)] INFO : Monitoring isn't enabled for the [development] environment.
+[02/12/22 23:01:29 -0600 Jatins-MacBook-Pro.local (78130)] INFO : Deferring agent start. Standing by for first request
+[02/12/22 23:01:45 -0600 Jatins-MacBook-Pro.local (78160)] INFO : No configuration file loaded, and no configuration found in ENV. For assistance configuring Scout, visit https://docs.scoutapm.com/#ruby-configuration-options
+[02/12/22 23:01:45 -0600 Jatins-MacBook-Pro.local (78160)] INFO : Scout Agent [4.1.2] Initialized
+[02/12/22 23:01:45 -0600 Jatins-MacBook-Pro.local (78160)] INFO : Not Loading Instruments
+[02/12/22 23:01:45 -0600 Jatins-MacBook-Pro.local (78160)] INFO : Scout Agent [4.1.2] Installed
+[02/12/22 23:01:45 -0600 Jatins-MacBook-Pro.local (78160)] INFO : Monitoring isn't enabled for the [development] environment.
+[02/12/22 23:01:45 -0600 Jatins-MacBook-Pro.local (78160)] INFO : Deferring agent start. Standing by for first request
+[02/12/22 23:01:57 -0600 Jatins-MacBook-Pro.local (78187)] INFO : No configuration file loaded, and no configuration found in ENV. For assistance configuring Scout, visit https://docs.scoutapm.com/#ruby-configuration-options
+[02/12/22 23:01:57 -0600 Jatins-MacBook-Pro.local (78187)] INFO : Scout Agent [4.1.2] Initialized
+[02/12/22 23:01:57 -0600 Jatins-MacBook-Pro.local (78187)] INFO : Not Loading Instruments
+[02/12/22 23:01:57 -0600 Jatins-MacBook-Pro.local (78187)] INFO : Scout Agent [4.1.2] Installed
+[02/12/22 23:01:57 -0600 Jatins-MacBook-Pro.local (78187)] INFO : Monitoring isn't enabled for the [development] environment.
+[02/12/22 23:01:57 -0600 Jatins-MacBook-Pro.local (78187)] INFO : Deferring agent start. Standing by for first request
+[02/12/22 23:06:15 -0600 Jatins-MacBook-Pro.local (78243)] INFO : No configuration file loaded, and no configuration found in ENV. For assistance configuring Scout, visit https://docs.scoutapm.com/#ruby-configuration-options
+[02/12/22 23:06:15 -0600 Jatins-MacBook-Pro.local (78243)] INFO : Scout Agent [4.1.2] Initialized
+[02/12/22 23:06:15 -0600 Jatins-MacBook-Pro.local (78243)] INFO : Not Loading Instruments
+[02/12/22 23:06:15 -0600 Jatins-MacBook-Pro.local (78243)] INFO : Scout Agent [4.1.2] Installed
+[02/12/22 23:06:15 -0600 Jatins-MacBook-Pro.local (78243)] INFO : Monitoring isn't enabled for the [development] environment.
+[02/12/22 23:06:15 -0600 Jatins-MacBook-Pro.local (78243)] INFO : Deferring agent start. Standing by for first request
+[02/12/22 23:06:17 -0600 Jatins-MacBook-Pro.local (78245)] INFO : No configuration file loaded, and no configuration found in ENV. For assistance configuring Scout, visit https://docs.scoutapm.com/#ruby-configuration-options
+[02/12/22 23:06:17 -0600 Jatins-MacBook-Pro.local (78245)] INFO : Scout Agent [4.1.2] Initialized
+[02/12/22 23:06:17 -0600 Jatins-MacBook-Pro.local (78245)] INFO : Not Loading Instruments
+[02/12/22 23:06:17 -0600 Jatins-MacBook-Pro.local (78245)] INFO : Scout Agent [4.1.2] Installed
+[02/12/22 23:06:17 -0600 Jatins-MacBook-Pro.local (78245)] INFO : Monitoring isn't enabled for the [development] environment.
+[02/13/22 00:18:27 -0600 Jatins-MacBook-Pro.local (80496)] INFO : No configuration file loaded, and no configuration found in ENV. For assistance configuring Scout, visit https://docs.scoutapm.com/#ruby-configuration-options
+[02/13/22 00:18:27 -0600 Jatins-MacBook-Pro.local (80496)] INFO : Scout Agent [4.1.2] Initialized
+[02/13/22 00:18:27 -0600 Jatins-MacBook-Pro.local (80496)] INFO : Not Loading Instruments
+[02/13/22 00:18:27 -0600 Jatins-MacBook-Pro.local (80496)] INFO : Scout Agent [4.1.2] Installed
+[02/13/22 00:18:27 -0600 Jatins-MacBook-Pro.local (80496)] INFO : Monitoring isn't enabled for the [development] environment.
+[02/13/22 00:18:27 -0600 Jatins-MacBook-Pro.local (80496)] INFO : Deferring agent start. Standing by for first request
+[02/13/22 00:20:07 -0600 Jatins-MacBook-Pro.local (80536)] INFO : No configuration file loaded, and no configuration found in ENV. For assistance configuring Scout, visit https://docs.scoutapm.com/#ruby-configuration-options
+[02/13/22 00:20:07 -0600 Jatins-MacBook-Pro.local (80536)] INFO : Scout Agent [4.1.2] Initialized
+[02/13/22 00:20:07 -0600 Jatins-MacBook-Pro.local (80536)] INFO : Not Loading Instruments
+[02/13/22 00:20:07 -0600 Jatins-MacBook-Pro.local (80536)] INFO : Scout Agent [4.1.2] Installed
+[02/13/22 00:20:07 -0600 Jatins-MacBook-Pro.local (80536)] INFO : Monitoring isn't enabled for the [development] environment.
+[02/13/22 00:20:07 -0600 Jatins-MacBook-Pro.local (80536)] INFO : Deferring agent start. Standing by for first request
+[02/13/22 00:20:23 -0600 Jatins-MacBook-Pro.local (80556)] INFO : No configuration file loaded, and no configuration found in ENV. For assistance configuring Scout, visit https://docs.scoutapm.com/#ruby-configuration-options
+[02/13/22 00:20:23 -0600 Jatins-MacBook-Pro.local (80556)] INFO : Scout Agent [4.1.2] Initialized
+[02/13/22 00:20:23 -0600 Jatins-MacBook-Pro.local (80556)] INFO : Not Loading Instruments
+[02/13/22 00:20:23 -0600 Jatins-MacBook-Pro.local (80556)] INFO : Scout Agent [4.1.2] Installed
+[02/13/22 00:20:23 -0600 Jatins-MacBook-Pro.local (80556)] INFO : Monitoring isn't enabled for the [development] environment.
+[02/13/22 00:20:23 -0600 Jatins-MacBook-Pro.local (80556)] INFO : Deferring agent start. Standing by for first request
+[02/13/22 00:20:41 -0600 Jatins-MacBook-Pro.local (80580)] INFO : No configuration file loaded, and no configuration found in ENV. For assistance configuring Scout, visit https://docs.scoutapm.com/#ruby-configuration-options
+[02/13/22 00:20:41 -0600 Jatins-MacBook-Pro.local (80580)] INFO : Scout Agent [4.1.2] Initialized
+[02/13/22 00:20:41 -0600 Jatins-MacBook-Pro.local (80580)] INFO : Not Loading Instruments
+[02/13/22 00:20:41 -0600 Jatins-MacBook-Pro.local (80580)] INFO : Scout Agent [4.1.2] Installed
+[02/13/22 00:20:41 -0600 Jatins-MacBook-Pro.local (80580)] INFO : Monitoring isn't enabled for the [development] environment.
+[02/13/22 00:20:41 -0600 Jatins-MacBook-Pro.local (80580)] INFO : Deferring agent start. Standing by for first request
