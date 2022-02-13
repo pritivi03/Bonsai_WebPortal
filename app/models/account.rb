@@ -13,6 +13,7 @@
 #  support_email         :string(100)
 #  created_at            :datetime         not null
 #  updated_at            :datetime         not null
+#  stripe_id             :string
 #
 
 class Account < ApplicationRecord

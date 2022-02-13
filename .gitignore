@@ -1,3 +1,6 @@
 /node_modules
 /tmp
 /log
+*.log
+log/scout_apm.log
+tmp/pids/server.pid
