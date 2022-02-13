@@ -75,6 +75,7 @@ export const actions = {
         .login(credentials)
         .then(() => {
           commit(types.default.SET_CURRENT_USER);
+          console.log("hello world")
           window.axios = createAxios(axios);
           actionCable.init(Vue);
           window.location = DEFAULT_REDIRECT_URL;

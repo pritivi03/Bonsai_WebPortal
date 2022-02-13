@@ -10,6 +10,14 @@ const primaryMenuItems = accountId => [
     roles: ['administrator', 'agent'],
   },
   {
+    icon: 'cloud',
+    key: 'knowledge_base',
+    label: 'KB',
+    toState: frontendURL(`accounts/${accountId}/settings`),
+    toStateName: 'settings_home',
+    roles: ['administrator'],
+  },
+  {
     icon: 'book-contacts',
     key: 'contacts',
     label: 'CONTACTS',
@@ -41,6 +49,7 @@ const primaryMenuItems = accountId => [
     toStateName: 'settings_home',
     roles: ['administrator', 'agent'],
   },
+  
 ];
 
 export default primaryMenuItems;
