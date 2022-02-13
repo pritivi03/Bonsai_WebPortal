@@ -2180,3 +2180,20 @@ AVOID eager loading detected
   Remove from your query: .includes([:inbox])
 Call stack
 
+2022-02-13 00:43:48[WARN] user: jatinkumar
+GET /auth/validate_token
+USE eager loading detected
+  AccountUser => [:account]
+  Add to your query: .includes([:account])
+Call stack
+  /Users/jatinkumar/Downloads/Bonsai-Repos/Bonsai_EndGame/app/views/api/v1/models/_user.json.jbuilder:23:in `block (2 levels) in _app_views_api_v__models__user_json_jbuilder__3143993539653688739_104380'
+  /Users/jatinkumar/Downloads/Bonsai-Repos/Bonsai_EndGame/app/views/api/v1/models/_user.json.jbuilder:21:in `block in _app_views_api_v__models__user_json_jbuilder__3143993539653688739_104380'
+  /Users/jatinkumar/Downloads/Bonsai-Repos/Bonsai_EndGame/app/views/api/v1/models/_user.json.jbuilder:20:in `_app_views_api_v__models__user_json_jbuilder__3143993539653688739_104380'
+  /Users/jatinkumar/Downloads/Bonsai-Repos/Bonsai_EndGame/app/views/devise/_auth.json.jbuilder:2:in `block in _app_views_devise__auth_json_jbuilder__19242281904890551_104340'
+  /Users/jatinkumar/Downloads/Bonsai-Repos/Bonsai_EndGame/app/views/devise/_auth.json.jbuilder:1:in `_app_views_devise__auth_json_jbuilder__19242281904890551_104340'
+  /Users/jatinkumar/Downloads/Bonsai-Repos/Bonsai_EndGame/app/views/devise/token.json.jbuilder:3:in `block in _app_views_devise_token_json_jbuilder__2340780518320779765_104040'
+  /Users/jatinkumar/Downloads/Bonsai-Repos/Bonsai_EndGame/app/views/devise/token.json.jbuilder:1:in `_app_views_devise_token_json_jbuilder__2340780518320779765_104040'
+  /Users/jatinkumar/Downloads/Bonsai-Repos/Bonsai_EndGame/app/controllers/devise_overrides/token_validations_controller.rb:5:in `validate_token'
+  /Users/jatinkumar/Downloads/Bonsai-Repos/Bonsai_EndGame/app/controllers/concerns/switch_locale.rb:24:in `set_locale'
+  /Users/jatinkumar/Downloads/Bonsai-Repos/Bonsai_EndGame/app/controllers/concerns/switch_locale.rb:11:in `switch_locale'
+
