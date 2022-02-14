@@ -132,6 +132,9 @@
   "SIDEBAR": {
     "CONVERSATIONS": "Conversations",
     "ALL_CONVERSATIONS": "All Conversations",
+    "KB": "Knowledge Base",
+    "KB_DASHBOARD": "Dashboard",
+    "KB_UPLOAD": "File Upload",
     "MENTIONED_CONVERSATIONS": "Mentions",
     "REPORTS": "Reports",
     "SETTINGS": "Settings",

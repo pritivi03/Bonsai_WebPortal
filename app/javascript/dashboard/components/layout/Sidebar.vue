@@ -147,6 +147,7 @@ export default {
     },
   },
   mounted() {
+    console.log("THE CURRENT ACCOUNT ID IS: " + this.accountId)
     this.$store.dispatch('labels/get');
     this.$store.dispatch('inboxes/get');
     this.$store.dispatch('notifications/unReadCount');

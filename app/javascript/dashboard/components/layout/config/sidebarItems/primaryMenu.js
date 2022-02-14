@@ -11,10 +11,10 @@ const primaryMenuItems = accountId => [
   },
   {
     icon: 'cloud',
-    key: 'knowledge_base',
+    key: 'knowledgeBase',
     label: 'KB',
-    toState: frontendURL(`accounts/${accountId}/settings`),
-    toStateName: 'settings_home',
+    toState: frontendURL(`accounts/${accountId}/knowledge-base`),
+    toStateName: 'knowledge_base',
     roles: ['administrator'],
   },
   {
