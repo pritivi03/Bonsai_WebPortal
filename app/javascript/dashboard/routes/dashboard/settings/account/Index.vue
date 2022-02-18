@@ -190,6 +190,7 @@ export default {
   mounted() {
     if (!this.id) {
       this.initializeAccount();
+      this.customUpdateAccount()
     }
   },
   methods: {
@@ -206,7 +207,10 @@ export default {
           features,
           auto_resolve_duration,
           latest_chatwoot_version: latestChatwootVersion,
+          stripe_id
         } = this.getAccount(this.accountId);
+
+        console.log(this.getAccount(this.accountId))
 
         this.$root.$i18n.locale = locale;
         this.name = name;
@@ -243,6 +247,15 @@ export default {
         this.showAlert(this.$t('GENERAL_SETTINGS.UPDATE.ERROR'));
       }
     },
+    async customUpdateAccount() {
+      try {
+        await this.$store.dispatch('accounts/update', {
+          stripe_id: "abc"
+        });
+      } catch (error) {
+        console.log(error)
+      }
+    }
   },
 };
 </script>

@@ -211,3 +211,58 @@
 [02/14/22 02:27:47 -0600 wireless-10-148-204-145.public.utexas.edu (56388)] INFO : Not Loading Instruments
 [02/14/22 02:27:47 -0600 wireless-10-148-204-145.public.utexas.edu (56388)] INFO : Scout Agent [4.1.2] Installed
 [02/14/22 02:27:47 -0600 wireless-10-148-204-145.public.utexas.edu (56388)] INFO : Monitoring isn't enabled for the [development] environment.
+[02/14/22 17:54:20 -0600 wireless-10-148-204-145.public.utexas.edu (19718)] INFO : No configuration file loaded, and no configuration found in ENV. For assistance configuring Scout, visit https://docs.scoutapm.com/#ruby-configuration-options
+[02/14/22 17:54:20 -0600 wireless-10-148-204-145.public.utexas.edu (19718)] INFO : Scout Agent [4.1.2] Initialized
+[02/14/22 17:54:20 -0600 wireless-10-148-204-145.public.utexas.edu (19718)] INFO : Not Loading Instruments
+[02/14/22 17:54:20 -0600 wireless-10-148-204-145.public.utexas.edu (19718)] INFO : Scout Agent [4.1.2] Installed
+[02/14/22 17:54:20 -0600 wireless-10-148-204-145.public.utexas.edu (19718)] INFO : Monitoring isn't enabled for the [development] environment.
+[02/14/22 17:54:20 -0600 wireless-10-148-204-145.public.utexas.edu (19718)] INFO : Deferring agent start. Standing by for first request
+[02/14/22 17:54:20 -0600 wireless-10-148-204-145.public.utexas.edu (19720)] INFO : No configuration file loaded, and no configuration found in ENV. For assistance configuring Scout, visit https://docs.scoutapm.com/#ruby-configuration-options
+[02/14/22 17:54:20 -0600 wireless-10-148-204-145.public.utexas.edu (19720)] INFO : Scout Agent [4.1.2] Initialized
+[02/14/22 17:54:20 -0600 wireless-10-148-204-145.public.utexas.edu (19720)] INFO : Not Loading Instruments
+[02/14/22 17:54:20 -0600 wireless-10-148-204-145.public.utexas.edu (19720)] INFO : Scout Agent [4.1.2] Installed
+[02/14/22 17:54:20 -0600 wireless-10-148-204-145.public.utexas.edu (19720)] INFO : Monitoring isn't enabled for the [development] environment.
+[02/14/22 22:57:25 -0600 wireless-10-148-204-145.public.utexas.edu (26905)] INFO : No configuration file loaded, and no configuration found in ENV. For assistance configuring Scout, visit https://docs.scoutapm.com/#ruby-configuration-options
+[02/14/22 22:57:25 -0600 wireless-10-148-204-145.public.utexas.edu (26905)] INFO : Scout Agent [4.1.2] Initialized
+[02/14/22 22:57:25 -0600 wireless-10-148-204-145.public.utexas.edu (26905)] INFO : Not Loading Instruments
+[02/14/22 22:57:25 -0600 wireless-10-148-204-145.public.utexas.edu (26905)] INFO : Scout Agent [4.1.2] Installed
+[02/14/22 22:57:25 -0600 wireless-10-148-204-145.public.utexas.edu (26907)] INFO : No configuration file loaded, and no configuration found in ENV. For assistance configuring Scout, visit https://docs.scoutapm.com/#ruby-configuration-options
+[02/14/22 22:57:25 -0600 wireless-10-148-204-145.public.utexas.edu (26907)] INFO : Scout Agent [4.1.2] Initialized
+[02/14/22 22:57:25 -0600 wireless-10-148-204-145.public.utexas.edu (26907)] INFO : Not Loading Instruments
+[02/14/22 22:57:25 -0600 wireless-10-148-204-145.public.utexas.edu (26907)] INFO : Scout Agent [4.1.2] Installed
+[02/14/22 22:57:25 -0600 wireless-10-148-204-145.public.utexas.edu (26907)] INFO : Monitoring isn't enabled for the [development] environment.
+[02/14/22 22:57:25 -0600 wireless-10-148-204-145.public.utexas.edu (26905)] INFO : Monitoring isn't enabled for the [development] environment.
+[02/14/22 22:57:25 -0600 wireless-10-148-204-145.public.utexas.edu (26905)] INFO : Deferring agent start. Standing by for first request
+[02/14/22 23:20:09 -0600 wireless-10-148-204-145.public.utexas.edu (27627)] INFO : No configuration file loaded, and no configuration found in ENV. For assistance configuring Scout, visit https://docs.scoutapm.com/#ruby-configuration-options
+[02/14/22 23:20:09 -0600 wireless-10-148-204-145.public.utexas.edu (27627)] INFO : Scout Agent [4.1.2] Initialized
+[02/14/22 23:20:09 -0600 wireless-10-148-204-145.public.utexas.edu (27627)] INFO : Not Loading Instruments
+[02/14/22 23:20:09 -0600 wireless-10-148-204-145.public.utexas.edu (27627)] INFO : Scout Agent [4.1.2] Installed
+[02/14/22 23:20:09 -0600 wireless-10-148-204-145.public.utexas.edu (27627)] INFO : Monitoring isn't enabled for the [development] environment.
+[02/14/22 23:20:09 -0600 wireless-10-148-204-145.public.utexas.edu (27627)] INFO : Deferring agent start. Standing by for first request
+[02/14/22 23:20:09 -0600 wireless-10-148-204-145.public.utexas.edu (27629)] INFO : No configuration file loaded, and no configuration found in ENV. For assistance configuring Scout, visit https://docs.scoutapm.com/#ruby-configuration-options
+[02/14/22 23:20:09 -0600 wireless-10-148-204-145.public.utexas.edu (27629)] INFO : Scout Agent [4.1.2] Initialized
+[02/14/22 23:20:09 -0600 wireless-10-148-204-145.public.utexas.edu (27629)] INFO : Not Loading Instruments
+[02/14/22 23:20:09 -0600 wireless-10-148-204-145.public.utexas.edu (27629)] INFO : Scout Agent [4.1.2] Installed
+[02/14/22 23:20:09 -0600 wireless-10-148-204-145.public.utexas.edu (27629)] INFO : Monitoring isn't enabled for the [development] environment.
+[02/14/22 23:28:19 -0600 wireless-10-148-204-145.public.utexas.edu (28017)] INFO : No configuration file loaded, and no configuration found in ENV. For assistance configuring Scout, visit https://docs.scoutapm.com/#ruby-configuration-options
+[02/14/22 23:28:19 -0600 wireless-10-148-204-145.public.utexas.edu (28017)] INFO : Scout Agent [4.1.2] Initialized
+[02/14/22 23:28:19 -0600 wireless-10-148-204-145.public.utexas.edu (28017)] INFO : Not Loading Instruments
+[02/14/22 23:28:19 -0600 wireless-10-148-204-145.public.utexas.edu (28017)] INFO : Scout Agent [4.1.2] Installed
+[02/14/22 23:28:19 -0600 wireless-10-148-204-145.public.utexas.edu (28017)] INFO : Monitoring isn't enabled for the [development] environment.
+[02/14/22 23:28:19 -0600 wireless-10-148-204-145.public.utexas.edu (28017)] INFO : Deferring agent start. Standing by for first request
+[02/14/22 23:28:20 -0600 wireless-10-148-204-145.public.utexas.edu (28019)] INFO : No configuration file loaded, and no configuration found in ENV. For assistance configuring Scout, visit https://docs.scoutapm.com/#ruby-configuration-options
+[02/14/22 23:28:20 -0600 wireless-10-148-204-145.public.utexas.edu (28019)] INFO : Scout Agent [4.1.2] Initialized
+[02/14/22 23:28:20 -0600 wireless-10-148-204-145.public.utexas.edu (28019)] INFO : Not Loading Instruments
+[02/14/22 23:28:20 -0600 wireless-10-148-204-145.public.utexas.edu (28019)] INFO : Scout Agent [4.1.2] Installed
+[02/14/22 23:28:20 -0600 wireless-10-148-204-145.public.utexas.edu (28019)] INFO : Monitoring isn't enabled for the [development] environment.
+[02/15/22 10:18:59 -0600 wireless-10-146-64-225.public.utexas.edu (39550)] INFO : No configuration file loaded, and no configuration found in ENV. For assistance configuring Scout, visit https://docs.scoutapm.com/#ruby-configuration-options
+[02/15/22 10:18:59 -0600 wireless-10-146-64-225.public.utexas.edu (39550)] INFO : Scout Agent [4.1.2] Initialized
+[02/15/22 10:18:59 -0600 wireless-10-146-64-225.public.utexas.edu (39550)] INFO : Not Loading Instruments
+[02/15/22 10:18:59 -0600 wireless-10-146-64-225.public.utexas.edu (39550)] INFO : Scout Agent [4.1.2] Installed
+[02/15/22 10:18:59 -0600 wireless-10-146-64-225.public.utexas.edu (39552)] INFO : No configuration file loaded, and no configuration found in ENV. For assistance configuring Scout, visit https://docs.scoutapm.com/#ruby-configuration-options
+[02/15/22 10:18:59 -0600 wireless-10-146-64-225.public.utexas.edu (39552)] INFO : Scout Agent [4.1.2] Initialized
+[02/15/22 10:18:59 -0600 wireless-10-146-64-225.public.utexas.edu (39552)] INFO : Not Loading Instruments
+[02/15/22 10:18:59 -0600 wireless-10-146-64-225.public.utexas.edu (39552)] INFO : Scout Agent [4.1.2] Installed
+[02/15/22 10:18:59 -0600 wireless-10-146-64-225.public.utexas.edu (39552)] INFO : Monitoring isn't enabled for the [development] environment.
+[02/15/22 10:18:59 -0600 wireless-10-146-64-225.public.utexas.edu (39550)] INFO : Monitoring isn't enabled for the [development] environment.
+[02/15/22 10:18:59 -0600 wireless-10-146-64-225.public.utexas.edu (39550)] INFO : Deferring agent start. Standing by for first request

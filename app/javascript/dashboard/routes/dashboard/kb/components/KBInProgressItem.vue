@@ -2,26 +2,32 @@
   <div id="container">
         <kb-file-icon :type="getFileExtension(this.file.name)"></kb-file-icon>
         <div id="innerContent">
-            <div id="top">
+            <div id="left">
                 <h6 style="alignSelf: flex-start;"><b>{{this.file.name}}</b></h6>
                 <p style="alignSelf: flex-start;">{{formatBytes(file.size)}}</p>
-                <v-progress-linear value="15"></v-progress-linear>
-
             </div>
-            <fluent-icon icon="dismiss-circle" size="20" style="color: red;" class="icon icon--font" />
+            <div id="right">
+                <spinner style="margin-right: 10px;" />
+                <p style="margin: 0px; width: 30px;">{{this.progress}}%</p>
+                <fluent-icon icon="dismiss-circle" size="20" style="color: red; margin-left: 10px;" class="icon icon--font" />
+            </div>
+            
         </div>
     </div>
 </template>
 
 <script>
+import Spinner from "../../../../../shared/components/Spinner.vue"
 import KBFileIcon from "./KBFileIcon.vue"
 export default {
     components: {
-        'kb-file-icon': KBFileIcon
+        'kb-file-icon': KBFileIcon,
+        Spinner
     },
     props: {
         file: Object,
-        index: Number
+        index: Number,
+        progress: Number
     },
     computed: {
         
@@ -51,7 +57,7 @@ export default {
 }
 </script>
     
-<style>
+<style scoped>
 #container {
     width: 100%;
     height: 125px;
@@ -69,7 +75,7 @@ export default {
     width: 100%;
 }
 
-#top {
+#left {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -78,6 +84,12 @@ export default {
 }
 
 #left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#right {
     display: flex;
     flex-direction: row;
     align-items: center;

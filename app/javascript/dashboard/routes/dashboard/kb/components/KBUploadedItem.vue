@@ -2,7 +2,7 @@
   <div id="container">
         <div id="left">
             <kb-file-icon :type="getFileExtension(this.file.name)" style="margin-right: 10px;"></kb-file-icon>
-            <div style="display: 'flex', flexDirection: 'column'">
+            <div style="display: flex; flexDirection: column;">
                 <h6><b>{{this.file.name}}</b></h6>
                 <p>{{this.formatBytes(this.file.size)}}</p>
             </div>
@@ -52,7 +52,7 @@ export default {
 }
 </script>
     
-<style>
+<style scoped>
 #container {
     width: 100%;
     height: 125px;

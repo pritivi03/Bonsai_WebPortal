@@ -1,7 +1,7 @@
 <template>
     <div style="width: 100%;">
         <kb-uploaded-item v-if="type == 'Uploaded' " :file="file" :index="index"></kb-uploaded-item>
-        <kb-in-progress-item v-if="type == 'In Progress' " :file="file" :index="index"></kb-in-progress-item>
+        <kb-in-progress-item v-if="type == 'In Progress' " :file="file" :progress="progress" :index="index"></kb-in-progress-item>
     </div>
 </template>
 
@@ -17,7 +17,8 @@ export default {
     props: {
         type: String,
         file: Object,
-        index: Number
+        index: Number,
+        progress: Number
     }
 }
 </script>

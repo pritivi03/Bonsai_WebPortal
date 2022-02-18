@@ -12,6 +12,7 @@ import campaigns from './campaigns/campaigns.routes';
 import teams from './teams/teams.routes';
 import attributes from './attributes/attributes.routes';
 import automation from './automation/automation.routes';
+import billing from "./billing/billing.routes"
 import store from '../../../store';
 
 export default {
@@ -27,6 +28,7 @@ export default {
         return frontendURL('accounts/:accountId/settings/canned-response');
       },
     },
+    ...billing.routes,
     ...account.routes,
     ...agent.routes,
     ...canned.routes,

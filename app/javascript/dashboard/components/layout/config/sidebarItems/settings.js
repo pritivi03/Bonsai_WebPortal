@@ -22,6 +22,7 @@ const settings = accountId => ({
     'settings_applications_integration',
     'general_settings',
     'general_settings_index',
+    'general_billing_index',
     'settings_teams_list',
     'settings_teams_new',
     'settings_teams_add_agents',
@@ -98,6 +99,13 @@ const settings = accountId => ({
       hasSubMenu: false,
       toState: frontendURL(`accounts/${accountId}/settings/applications`),
       toStateName: 'settings_applications',
+    },
+    {
+      icon: 'credit-card-person',
+      label: 'BILLING',
+      hasSubMenu: false,
+      toState: frontendURL(`accounts/${accountId}/settings/billing`),
+      toStateName: 'general_billing_index',
     },
     {
       icon: 'settings',

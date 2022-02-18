@@ -7,3 +7,4 @@ json.support_email @account.support_email
 json.features @account.all_features
 json.auto_resolve_duration @account.auto_resolve_duration
 json.latest_chatwoot_version @latest_chatwoot_version
+json.stripe_id @account.stripe_id

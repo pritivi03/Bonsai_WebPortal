@@ -130,6 +130,14 @@ const GO_TO_COMMANDS = [
     role: ['administrator'],
   },
   {
+    id: 'open_billing_settings',
+    title: 'COMMAND_BAR.COMMANDS.GO_TO_SETTINGS_ACCOUNT',
+    section: 'COMMAND_BAR.SECTIONS.SETTINGS',
+    icon: ICON_ACCOUNT_SETTINGS,
+    path: accountId => `accounts/${accountId}/settings/billing`,
+    role: ['administrator'],
+  },
+  {
     id: 'open_profile_settings',
     title: 'COMMAND_BAR.COMMANDS.GO_TO_SETTINGS_PROFILE',
     section: 'COMMAND_BAR.SECTIONS.SETTINGS',

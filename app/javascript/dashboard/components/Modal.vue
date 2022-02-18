@@ -7,7 +7,7 @@
       @click="onBackDropClick"
     >
       <div :class="modalContainerClassName" @click.stop>
-        <button class="modal--close" @click="close">
+        <button v-if="noClose == 'false' " class="modal--close" @click="close">
           <fluent-icon icon="dismiss" />
         </button>
         <slot />
@@ -26,7 +26,7 @@ export default {
     show: Boolean,
     onClose: {
       type: Function,
-      required: true,
+      default: () => {}
     },
     fullWidth: {
       type: Boolean,
@@ -40,6 +40,10 @@ export default {
       type: String,
       default: '',
     },
+    noClose: {
+      type: String,
+      default: "false"
+    }
   },
   computed: {
     modalContainerClassName() {

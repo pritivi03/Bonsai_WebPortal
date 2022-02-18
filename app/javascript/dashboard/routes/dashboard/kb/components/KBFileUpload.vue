@@ -1,9 +1,6 @@
 <template>
     <div id="mainContainer">
-        <settings-header
-            button-route="new"
-            header-title="Upload to Knowledge Base"
-        />
+        <kb-file-upload-header :hasUploaded="this.hasUploaded" @uploadFinished="this.finishUpload"></kb-file-upload-header>
         <div id="contentContainer">
             <div id="focusContainer" width="700">
                 <div id="uploadContainer">
@@ -11,16 +8,41 @@
                     <img width="350" id="dragImage" src="../assets/DragArea.svg" v-on:click="uploadImageClicked"/>
                     <p>Drag & drop files here, or click to select files</p>
                 </div>
-                <div id="thumbsContainer">
-                    <kb-file-item v-for="(file, index) in this.files" :file="file" :type="file.status" :index="index" :key="file.name"></kb-file-item>
+                <div id="thumbsContainer" v-if="hasUploaded">
+                    <kb-file-item v-for="(file, index) in this.files" :file="file" :type="file.status" :index="index" :progress="progress" :key="file.name"></kb-file-item>
                 </div>
             </div>
         </div>
+        <woot-modal
+            :show="loading"
+            noClose="true"
+        >
+            <woot-modal-header
+                header-title="Loading..."
+                header-content="Sprucing your trees with some water and sunlight."
+            />
+            <div
+                style="width: 40 rem; display: flex; flex-direction: row; justify-content: center; margin-top: 30px; margin-bottom: 30px;"
+            >
+                <spinner size="size"/>
+            </div>
+            <!-- <div
+            class="modal-footer delete-item"
+            >
+            <button
+                class="button success large expanded nice"
+                @click="$emit('show-create-account-modal')"
+            >
+                {{ $t('CREATE_ACCOUNT.NEW_ACCOUNT') }}
+            </button>
+            </div> -->
+        </woot-modal>
     </div>
 </template>
 
 <script>
-import SettingsHeader from "../../settings/SettingsHeader.vue"
+import KBFileUploadHeader from "./KBFileUploadHeader.vue"
+import Spinner from "../../../../../shared/components/Spinner.vue"
 import { mapGetters } from 'vuex';
 
 class UploadObject  {
@@ -58,12 +80,13 @@ class PackagedAnnotation {
 
 export default {
     components: {
-        SettingsHeader,
-        'kb-file-item': () => import('./KBFileItem.vue')
+        'kb-file-upload-header': KBFileUploadHeader,
+        'kb-file-item': () => import('./KBFileItem.vue'),
+        Spinner
     },
     computed: {
-        fileType : function (index) {
-            
+        hasUploaded: function () {
+            return this.files.length > 0
         },
         api : function () {
             return "https://ngvi1z9egk.execute-api.us-east-2.amazonaws.com/beta/"
@@ -172,15 +195,59 @@ export default {
                 }
             }
 
+        },
+        addFileToDB(file) {           
+            const self = this 
+            return new Promise(function (resolve, reject) {
+                var url = self.api + "file?file_name=" + file.name + "&file_size=" + file.size + "&company_id=" + self.accountId + "&s3_url=NONE"
+                var xhr = new XMLHttpRequest();
+                xhr.open("POST", url, true);
+
+                xhr.onload = function () {
+                    if (this.status >= 200 && this.status < 300) {
+                        resolve(xhr.response);
+                    } else {
+                        reject({
+                            status: this.status,
+                            statusText: xhr.statusText
+                        });
+                    }
+                };
+                xhr.onerror = function () {
+                    reject({
+                        status: this.status,
+                        statusText: xhr.statusText
+                    });
+                };
+                xhr.send(null);
+
+            })    
+            
+        },
+        async finishUpload () {
+
+            this.loading = true
+            //create new file objects for all of them by calling the api
+            for (var i = 0; i < this.files.length; i++) {
+                await this.addFileToDB(this.files[i]);
+            }
+
+            this.loading = false;
+            console.log("Finished adding files to db!")
+
+            window.location = `/app/accounts/${this.accountId}/knowledge-base`
+
         }
     },
     data: function () {
+        //new UploadObject("Something_Else.xlsx", 39439, "Uploaded", 0)
         return {
-            files: [new UploadObject("Something_Else.xlsx", 39439, "In Progress", 0)],
+            files: [],
             progress: 0,
             fileState: "In Progress",
             statuses: [],
-            currentIndex: 0
+            currentIndex: 0,
+            loading: false
         }
     }
 }
