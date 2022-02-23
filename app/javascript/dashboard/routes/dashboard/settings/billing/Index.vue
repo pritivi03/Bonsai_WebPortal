@@ -23,7 +23,9 @@
             <h5><b>$1000</b></h5><p style="padding-top: 3px;">/seat/month</p>
           </label>
 
-          <woot-button style="margin-top: 15px;">Change Plan</woot-button>
+          <router-link to="billing/plan">
+                      <woot-button style="margin-top: 15px;">Change Plan</woot-button>
+          </router-link>
         </div>
       </div>
 

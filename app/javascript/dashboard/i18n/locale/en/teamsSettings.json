@@ -33,6 +33,18 @@
           "route": "settings_teams_finish",
           "body": "You are all set to go!"
         }
+      ],
+      "BILLINGWIZARD": [
+        {
+          "title": "Create",
+          "route": "billing_plan_choose",
+          "body": "Create a new team of agents."
+        },
+        {
+          "title": "Finish",
+          "route": "billing_plan_finish",
+          "body": "You are all set to go!"
+        }
       ]
     },
     "EDIT_FLOW": {
