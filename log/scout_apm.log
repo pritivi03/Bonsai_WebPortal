@@ -277,3 +277,47 @@
 [02/21/22 18:33:05 -0600 wireless-10-148-118-196.public.utexas.edu (81598)] INFO : Monitoring isn't enabled for the [development] environment.
 [02/21/22 18:33:05 -0600 wireless-10-148-118-196.public.utexas.edu (81596)] INFO : Monitoring isn't enabled for the [development] environment.
 [02/21/22 18:33:05 -0600 wireless-10-148-118-196.public.utexas.edu (81596)] INFO : Deferring agent start. Standing by for first request
+[02/23/22 13:06:01 -0600 wireless-10-148-123-222.public.utexas.edu (8105)] INFO : No configuration file loaded, and no configuration found in ENV. For assistance configuring Scout, visit https://docs.scoutapm.com/#ruby-configuration-options
+[02/23/22 13:06:01 -0600 wireless-10-148-123-222.public.utexas.edu (8103)] INFO : No configuration file loaded, and no configuration found in ENV. For assistance configuring Scout, visit https://docs.scoutapm.com/#ruby-configuration-options
+[02/23/22 13:06:01 -0600 wireless-10-148-123-222.public.utexas.edu (8105)] INFO : Scout Agent [4.1.2] Initialized
+[02/23/22 13:06:01 -0600 wireless-10-148-123-222.public.utexas.edu (8103)] INFO : Scout Agent [4.1.2] Initialized
+[02/23/22 13:06:01 -0600 wireless-10-148-123-222.public.utexas.edu (8105)] INFO : Not Loading Instruments
+[02/23/22 13:06:01 -0600 wireless-10-148-123-222.public.utexas.edu (8103)] INFO : Not Loading Instruments
+[02/23/22 13:06:01 -0600 wireless-10-148-123-222.public.utexas.edu (8105)] INFO : Scout Agent [4.1.2] Installed
+[02/23/22 13:06:01 -0600 wireless-10-148-123-222.public.utexas.edu (8103)] INFO : Scout Agent [4.1.2] Installed
+[02/23/22 13:06:01 -0600 wireless-10-148-123-222.public.utexas.edu (8105)] INFO : Monitoring isn't enabled for the [development] environment.
+[02/23/22 13:06:01 -0600 wireless-10-148-123-222.public.utexas.edu (8103)] INFO : Monitoring isn't enabled for the [development] environment.
+[02/23/22 13:06:01 -0600 wireless-10-148-123-222.public.utexas.edu (8103)] INFO : Deferring agent start. Standing by for first request
+[02/26/22 14:08:50 -0600 wireless-10-148-70-32.public.utexas.edu (45831)] INFO : No configuration file loaded, and no configuration found in ENV. For assistance configuring Scout, visit https://docs.scoutapm.com/#ruby-configuration-options
+[02/26/22 14:08:50 -0600 wireless-10-148-70-32.public.utexas.edu (45831)] INFO : Scout Agent [4.1.2] Initialized
+[02/26/22 14:08:50 -0600 wireless-10-148-70-32.public.utexas.edu (45831)] INFO : Not Loading Instruments
+[02/26/22 14:08:50 -0600 wireless-10-148-70-32.public.utexas.edu (45831)] INFO : Scout Agent [4.1.2] Installed
+[02/26/22 14:08:50 -0600 wireless-10-148-70-32.public.utexas.edu (45831)] INFO : Monitoring isn't enabled for the [development] environment.
+[02/26/22 14:08:50 -0600 wireless-10-148-70-32.public.utexas.edu (45831)] INFO : Deferring agent start. Standing by for first request
+[02/26/22 14:08:50 -0600 wireless-10-148-70-32.public.utexas.edu (45833)] INFO : No configuration file loaded, and no configuration found in ENV. For assistance configuring Scout, visit https://docs.scoutapm.com/#ruby-configuration-options
+[02/26/22 14:08:50 -0600 wireless-10-148-70-32.public.utexas.edu (45833)] INFO : Scout Agent [4.1.2] Initialized
+[02/26/22 14:08:50 -0600 wireless-10-148-70-32.public.utexas.edu (45833)] INFO : Not Loading Instruments
+[02/26/22 14:08:50 -0600 wireless-10-148-70-32.public.utexas.edu (45833)] INFO : Scout Agent [4.1.2] Installed
+[02/26/22 14:08:50 -0600 wireless-10-148-70-32.public.utexas.edu (45833)] INFO : Monitoring isn't enabled for the [development] environment.
+[02/28/22 00:35:25 -0600 Pritivis-MacBook-Pro-2.local (75912)] INFO : No configuration file loaded, and no configuration found in ENV. For assistance configuring Scout, visit https://docs.scoutapm.com/#ruby-configuration-options
+[02/28/22 00:35:25 -0600 Pritivis-MacBook-Pro-2.local (75912)] INFO : Scout Agent [4.1.2] Initialized
+[02/28/22 00:35:25 -0600 Pritivis-MacBook-Pro-2.local (75912)] INFO : Not Loading Instruments
+[02/28/22 00:35:25 -0600 Pritivis-MacBook-Pro-2.local (75912)] INFO : Scout Agent [4.1.2] Installed
+[02/28/22 00:35:25 -0600 Pritivis-MacBook-Pro-2.local (75912)] INFO : Monitoring isn't enabled for the [development] environment.
+[02/28/22 00:35:25 -0600 Pritivis-MacBook-Pro-2.local (75912)] INFO : Deferring agent start. Standing by for first request
+[02/28/22 00:35:25 -0600 Pritivis-MacBook-Pro-2.local (75914)] INFO : No configuration file loaded, and no configuration found in ENV. For assistance configuring Scout, visit https://docs.scoutapm.com/#ruby-configuration-options
+[02/28/22 00:35:25 -0600 Pritivis-MacBook-Pro-2.local (75914)] INFO : Scout Agent [4.1.2] Initialized
+[02/28/22 00:35:25 -0600 Pritivis-MacBook-Pro-2.local (75914)] INFO : Not Loading Instruments
+[02/28/22 00:35:25 -0600 Pritivis-MacBook-Pro-2.local (75914)] INFO : Scout Agent [4.1.2] Installed
+[02/28/22 00:35:25 -0600 Pritivis-MacBook-Pro-2.local (75914)] INFO : Monitoring isn't enabled for the [development] environment.
+[02/28/22 00:42:08 -0600 Pritivis-MacBook-Pro-2.local (76174)] INFO : No configuration file loaded, and no configuration found in ENV. For assistance configuring Scout, visit https://docs.scoutapm.com/#ruby-configuration-options
+[02/28/22 00:42:08 -0600 Pritivis-MacBook-Pro-2.local (76174)] INFO : Scout Agent [4.1.2] Initialized
+[02/28/22 00:42:08 -0600 Pritivis-MacBook-Pro-2.local (76174)] INFO : Not Loading Instruments
+[02/28/22 00:42:08 -0600 Pritivis-MacBook-Pro-2.local (76174)] INFO : Scout Agent [4.1.2] Installed
+[02/28/22 00:42:08 -0600 Pritivis-MacBook-Pro-2.local (76174)] INFO : Monitoring isn't enabled for the [development] environment.
+[02/28/22 00:42:08 -0600 Pritivis-MacBook-Pro-2.local (76174)] INFO : Deferring agent start. Standing by for first request
+[02/28/22 00:42:09 -0600 Pritivis-MacBook-Pro-2.local (76176)] INFO : No configuration file loaded, and no configuration found in ENV. For assistance configuring Scout, visit https://docs.scoutapm.com/#ruby-configuration-options
+[02/28/22 00:42:09 -0600 Pritivis-MacBook-Pro-2.local (76176)] INFO : Scout Agent [4.1.2] Initialized
+[02/28/22 00:42:09 -0600 Pritivis-MacBook-Pro-2.local (76176)] INFO : Not Loading Instruments
+[02/28/22 00:42:09 -0600 Pritivis-MacBook-Pro-2.local (76176)] INFO : Scout Agent [4.1.2] Installed
+[02/28/22 00:42:09 -0600 Pritivis-MacBook-Pro-2.local (76176)] INFO : Monitoring isn't enabled for the [development] environment.

@@ -190,7 +190,8 @@ export default {
   mounted() {
     if (!this.id) {
       this.initializeAccount();
-      this.customUpdateAccount()
+      this.customUpdateAccount("cus_L6psb9BMWj59BU")
+      //this.customUpdateAccount("")
     }
   },
   methods: {
@@ -247,10 +248,10 @@ export default {
         this.showAlert(this.$t('GENERAL_SETTINGS.UPDATE.ERROR'));
       }
     },
-    async customUpdateAccount() {
+    async customUpdateAccount(id_update) {
       try {
         await this.$store.dispatch('accounts/update', {
-          stripe_id: "abc"
+          stripe_id: id_update
         });
       } catch (error) {
         console.log(error)

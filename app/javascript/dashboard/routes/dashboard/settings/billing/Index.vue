@@ -11,7 +11,7 @@
         <div class="columns small-9 medium-5">
           <label :class="{ error: $v.name.$error }">
             <h5>Starter Plan</h5>
-            <p>Effective from {{"May 20th, 2020"}} to {{"June 20th, 2020"}}</p>
+            <p>{{this.effectivePeriod}}</p>
           </label>
           <label :class="{ error: $v.locale.$error }" style="margin-top: 15px;">
             <p>57 KB / 100 GB bandwidth</p>
@@ -20,7 +20,7 @@
           </label>
           
           <label :class="{ error: $v.autoResolveDuration.$error }" style="margin: 0px; margin-top: 15px; width: 100px; display: flex; align-items: center;">
-            <h5><b>$1000</b></h5><p style="padding-top: 3px;">/seat/month</p>
+            <h5><b>${{this.planPrice}}</b></h5><p style="padding-top: 3px;">/seat/month</p>
           </label>
 
           <router-link to="billing/plan">
@@ -83,7 +83,10 @@ export default {
       features: {},
       autoResolveDuration: null,
       latestChatwootVersion: null,
-      paymentMethods: []
+      paymentMethods: [],
+      effectivePeriod: "",
+      planPrice: "",
+      api: "http://127.0.0.1:5000/",
     };
   },
   validations: {
@@ -136,10 +139,11 @@ export default {
       return this.id.toString();
     },
   },
-  mounted() {
+  async mounted() {
     if (!this.id) {
-      this.initializeAccount();
-      this.customUpdateAccount()
+      await this.initializeAccount();
+      this.retrieveBillingInfo();
+      //this.customUpdateAccount()
     }
   },
   methods: {
@@ -171,6 +175,7 @@ export default {
         this.features = features;
         this.autoResolveDuration = auto_resolve_duration;
         this.latestChatwootVersion = latestChatwootVersion;
+        this.stripe_id = stripe_id
       } catch (error) {
         // Ignore error
       }
@@ -199,11 +204,59 @@ export default {
     async customUpdateAccount() {
       try {
         await this.$store.dispatch('accounts/update', {
-          stripe_id: "abc"
+          stripe_id: ""
         });
       } catch (error) {
         console.log(error)
       }
+    },
+
+    async onStarterPlan() {
+        //they have not paid for anything yet, this means they are on the free account
+
+        //set the effective period to free forever
+        this.effectivePeriod = "Effective in continuity"
+        this.planPrice = "25"
+
+        console.log(this.stripe_id)
+    },
+    async retrieveBillingInfo() {
+      //check to see if there is a stripe ID
+
+
+      if (this.stripe_id == "" || this.stripe_id == undefined) {
+        this.onStarterPlan()
+      } else {
+
+        //use their stripe_id to fetch their current subscriptions
+
+        fetch(this.api + "billing/getCustomerCurrentSubscriptions?customer_id=" + this.stripe_id)
+        .then(response => response.json())
+        .then(resp => {
+
+          if (resp == undefined || resp["data"] == undefined || resp["data"][0] == undefined) {
+            this.onStarterPlan()
+          } else {
+            var active_sub = resp["data"][0]
+
+            var planData = {"price_1KY3ErBxBilIm7SklJyAoKHA": "Starter Plan"}
+            var priceData = {"price_1KY3ErBxBilIm7SklJyAoKHA": 125}
+
+            var sub_id = active_sub["plan"]["id"]
+
+            var sub_start = new Date(active_sub["current_period_start"] * 1000)
+            var sub_end = new Date(active_sub["current_period_end"] * 1000)
+
+            this.effectivePeriod = "Effective from " + sub_start.toLocaleDateString() + " to " + sub_end.toLocaleDateString()
+            this.planPrice = priceData[sub_id]
+
+            console.log(active_sub)
+          }
+        
+        });
+
+      }
+
     }
   },
 };
