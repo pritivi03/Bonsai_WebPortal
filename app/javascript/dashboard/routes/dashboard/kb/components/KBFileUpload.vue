@@ -89,7 +89,7 @@ export default {
             return this.files.length > 0
         },
         api : function () {
-            return "https://ngvi1z9egk.execute-api.us-east-2.amazonaws.com/beta/"
+            return "http://127.0.0.1:5000/"
         },
         ...mapGetters({
             accountId: 'getCurrentAccountId',
@@ -99,8 +99,8 @@ export default {
         uploadImageClicked () {
             document.getElementById("uploader").click();
         },
-        async getPresignedUploadURL (fileName) {
-            var url = this.api + "file/getUploadURL?file_name=" + fileName + "&url_type=POST"
+        async getPresignedUploadURL (filePath) {
+            var url = this.api + "kb/getPresignedURL?file_path=" + filePath + "&url_type=POST"
             const response = await fetch(url)
             const jsonResponse = await response.json()
             console.log(jsonResponse["post_url"])
@@ -186,6 +186,9 @@ export default {
                 var uploadURL = await this.getPresignedUploadURL(this.accountId + "/" + thisFile.name)
                 console.log("GENERATED UPLOAD URL " + uploadURL)
 
+                //also send the file to our backend for upload
+                await this.uploadFileToBackend(thisFile)
+
                 //perform a put on the url to upload
                 await this.performUpload(uploadURL, newFileUpload, thisFile, i)
 
@@ -195,11 +198,36 @@ export default {
                 }
             }
 
+
+        },
+        uploadFileToBackend(file) {
+            const request = new XMLHttpRequest();
+            const formData = new FormData();
+
+            request.open("POST", this.api + "kb/uploadFiles", true);
+            request.onreadystatechange = () => {
+                if (request.readyState === 4 && request.status === 200) {
+                    console.log(request.responseText);
+                }
+            };
+
+            formData.append("files", file)
+            
+            /*for (let i = 0; i < files.length; i++) {
+                formData.append("files", files[i])
+            }*/
+            request.send(formData);
         },
         addFileToDB(file) {           
             const self = this 
             return new Promise(function (resolve, reject) {
-                var url = self.api + "file?file_name=" + file.name + "&file_size=" + file.size + "&company_id=" + self.accountId + "&s3_url=NONE"
+                var body =  {
+                    "file_name": file.name,
+                    "file_size": file.size,
+                    "company_id": self.accountId,
+                    "s3_url": "NONE"
+                }
+                var url = self.api + "kb/addFile"
                 var xhr = new XMLHttpRequest();
                 xhr.open("POST", url, true);
 
@@ -219,7 +247,8 @@ export default {
                         statusText: xhr.statusText
                     });
                 };
-                xhr.send(null);
+                xhr.setRequestHeader("Content-Type", "application/json");
+                xhr.send(JSON.stringify(body));
 
             })    
             
@@ -231,6 +260,8 @@ export default {
             for (var i = 0; i < this.files.length; i++) {
                 await this.addFileToDB(this.files[i]);
             }
+
+            //add annotations to the files as well here
 
             this.loading = false;
             console.log("Finished adding files to db!")

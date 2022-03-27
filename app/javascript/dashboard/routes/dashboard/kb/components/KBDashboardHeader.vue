@@ -76,6 +76,7 @@
         >
           {{ $t('IMPORT_CONTACTS.BUTTON_LABEL') }}
         </woot-button>
+        
       </div>
     </div>
   </header>
@@ -83,6 +84,7 @@
 
 <script>
 import { mapGetters } from 'vuex';
+import AccordionItem from "../../../../../dashboard/components/Accordion/AccordionItem.vue"
 
 export default {
   props: {
@@ -140,6 +142,9 @@ export default {
       return this.segmentsId !== 0;
     },
   },
+  components: {
+    AccordionItem
+  },
   methods: {
     onToggleSegmentsModal() {
       this.$emit('on-toggle-save-filter');
@@ -148,7 +153,7 @@ export default {
       this.$emit('on-toggle-delete-filter');
     },
     searchSubmitted() {
-        console.log(this.searchText)
+        this.onSearchSubmit(this.searchText)
     }
   },
 };

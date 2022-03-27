@@ -76,8 +76,9 @@ export default {
         }
     },
     methods: {
-        onSearchSubmit() {
-            console.log(this.searchQuery)
+        onSearchSubmit(searchText) {
+            self.tableData = this.tableData.filter()
+            console.log(searchText)
         },
         bytesToSize(bytes) {
             var sizes = ['Bytes', 'KB', 'MB', 'GB', 'TB'];
@@ -88,17 +89,18 @@ export default {
     },
     mounted: function () {
         //get the files with the url
-        var api = "https://ngvi1z9egk.execute-api.us-east-2.amazonaws.com/beta/"
-        var url = api + "knowledgebase?company_id=" + this.accountId
+        //var api = "https://ngvi1z9egk.execute-api.us-east-2.amazonaws.com/beta/"
+        var api = "http://127.0.0.1:5000/"
+        //var url = api + "knowledgebase?company_id=" + this.accountId
+        var url = api + "kb/getFiles?company_id=" + this.accountId
         const self = this;
         fetch(url)
         .then(function(response) {
             return response.json();
         })
         .then(function(jsonResponse) {
-            // do something with jsonResponse
-            self.tableData = jsonResponse
             console.log(jsonResponse)
+            self.tableData = jsonResponse["body"]
         });
     }
 }

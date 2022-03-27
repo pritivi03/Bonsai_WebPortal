@@ -10,7 +10,7 @@
         </div>
         <div class="columns small-9 medium-5">
           <label :class="{ error: $v.name.$error }">
-            <h5>Starter Plan</h5>
+            <h5>{{this.currentPlan}} Plan</h5>
             <p>{{this.effectivePeriod}}</p>
           </label>
           <label :class="{ error: $v.locale.$error }" style="margin-top: 15px;">
@@ -41,9 +41,15 @@
         <div class="columns small-9 medium-5">
             <table class="woot-table">
                 <tr>
-                    <td>Method</td>
-                    <td>Number</td>
-                    <td>Expiry</td>
+                    <td><b>Method</b></td>
+                    <td><b>Number</b></td>
+                    <td><b>Expiry</b></td>
+                </tr>
+
+                <tr style="height: 30px;" v-for="paymentMethod in paymentMethods" :key="paymentMethod.last4">
+                  <td><img :src="`./assets/${paymentMethod.brand}.svg`"/></td>
+                  <td>{{paymentMethod["last4"]}}</td>
+                  <td>{{paymentMethod["exp_month"] + "/" + paymentMethod["exp_year"]}}</td>
                 </tr>
                 
             </table>
@@ -69,6 +75,7 @@ import { mapGetters } from 'vuex';
 import alertMixin from 'shared/mixins/alertMixin';
 import configMixin from 'shared/mixins/configMixin';
 import accountMixin from '../../../../mixins/account';
+import ky from "ky"
 const semver = require('semver');
 
 export default {
@@ -87,6 +94,7 @@ export default {
       effectivePeriod: "",
       planPrice: "",
       api: "http://127.0.0.1:5000/",
+      currentPlan: "",
     };
   },
   validations: {
@@ -217,6 +225,7 @@ export default {
         //set the effective period to free forever
         this.effectivePeriod = "Effective in continuity"
         this.planPrice = "25"
+        this.currentPlan = "Starter"
 
         console.log(this.stripe_id)
     },
@@ -249,6 +258,7 @@ export default {
 
             this.effectivePeriod = "Effective from " + sub_start.toLocaleDateString() + " to " + sub_end.toLocaleDateString()
             this.planPrice = priceData[sub_id]
+            this.currentPlan = "Pro"
 
             console.log(active_sub)
           }
@@ -256,6 +266,17 @@ export default {
         });
 
       }
+
+      //now retrieve their payment methods
+
+      var paymentMethodResp = await ky.get(this.api + "billing/getCustomerPaymentMethods?customer_id=" + this.stripe_id).json()
+      var paymentMethods = paymentMethodResp["response"]["data"]
+      var pmObjects = []
+      for (var i = 0; i < paymentMethods.length; i++) { 
+        pmObjects.push(paymentMethods[i]["card"])
+      }
+      this.paymentMethods = pmObjects
+      console.log(this.paymentMethods)
 
     }
   },

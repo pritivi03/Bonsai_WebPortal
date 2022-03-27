@@ -321,3 +321,47 @@
 [02/28/22 00:42:09 -0600 Pritivis-MacBook-Pro-2.local (76176)] INFO : Not Loading Instruments
 [02/28/22 00:42:09 -0600 Pritivis-MacBook-Pro-2.local (76176)] INFO : Scout Agent [4.1.2] Installed
 [02/28/22 00:42:09 -0600 Pritivis-MacBook-Pro-2.local (76176)] INFO : Monitoring isn't enabled for the [development] environment.
+[03/06/22 13:55:11 -0600 wireless-10-148-151-138.public.utexas.edu (66688)] INFO : No configuration file loaded, and no configuration found in ENV. For assistance configuring Scout, visit https://docs.scoutapm.com/#ruby-configuration-options
+[03/06/22 13:55:11 -0600 wireless-10-148-151-138.public.utexas.edu (66686)] INFO : No configuration file loaded, and no configuration found in ENV. For assistance configuring Scout, visit https://docs.scoutapm.com/#ruby-configuration-options
+[03/06/22 13:55:11 -0600 wireless-10-148-151-138.public.utexas.edu (66688)] INFO : Scout Agent [4.1.2] Initialized
+[03/06/22 13:55:11 -0600 wireless-10-148-151-138.public.utexas.edu (66686)] INFO : Scout Agent [4.1.2] Initialized
+[03/06/22 13:55:11 -0600 wireless-10-148-151-138.public.utexas.edu (66688)] INFO : Not Loading Instruments
+[03/06/22 13:55:11 -0600 wireless-10-148-151-138.public.utexas.edu (66688)] INFO : Scout Agent [4.1.2] Installed
+[03/06/22 13:55:11 -0600 wireless-10-148-151-138.public.utexas.edu (66686)] INFO : Not Loading Instruments
+[03/06/22 13:55:11 -0600 wireless-10-148-151-138.public.utexas.edu (66686)] INFO : Scout Agent [4.1.2] Installed
+[03/06/22 13:55:11 -0600 wireless-10-148-151-138.public.utexas.edu (66688)] INFO : Monitoring isn't enabled for the [development] environment.
+[03/06/22 13:55:11 -0600 wireless-10-148-151-138.public.utexas.edu (66686)] INFO : Monitoring isn't enabled for the [development] environment.
+[03/06/22 13:55:11 -0600 wireless-10-148-151-138.public.utexas.edu (66686)] INFO : Deferring agent start. Standing by for first request
+[03/16/22 17:33:09 -0500 Pritivis-MBP-2.attlocal.net (97031)] INFO : No configuration file loaded, and no configuration found in ENV. For assistance configuring Scout, visit https://docs.scoutapm.com/#ruby-configuration-options
+[03/16/22 17:33:09 -0500 Pritivis-MBP-2.attlocal.net (97033)] INFO : No configuration file loaded, and no configuration found in ENV. For assistance configuring Scout, visit https://docs.scoutapm.com/#ruby-configuration-options
+[03/16/22 17:33:09 -0500 Pritivis-MBP-2.attlocal.net (97031)] INFO : Scout Agent [4.1.2] Initialized
+[03/16/22 17:33:09 -0500 Pritivis-MBP-2.attlocal.net (97033)] INFO : Scout Agent [4.1.2] Initialized
+[03/16/22 17:33:09 -0500 Pritivis-MBP-2.attlocal.net (97031)] INFO : Not Loading Instruments
+[03/16/22 17:33:09 -0500 Pritivis-MBP-2.attlocal.net (97033)] INFO : Not Loading Instruments
+[03/16/22 17:33:09 -0500 Pritivis-MBP-2.attlocal.net (97031)] INFO : Scout Agent [4.1.2] Installed
+[03/16/22 17:33:09 -0500 Pritivis-MBP-2.attlocal.net (97033)] INFO : Scout Agent [4.1.2] Installed
+[03/16/22 17:33:09 -0500 Pritivis-MBP-2.attlocal.net (97033)] INFO : Monitoring isn't enabled for the [development] environment.
+[03/16/22 17:33:09 -0500 Pritivis-MBP-2.attlocal.net (97031)] INFO : Monitoring isn't enabled for the [development] environment.
+[03/16/22 17:33:09 -0500 Pritivis-MBP-2.attlocal.net (97031)] INFO : Deferring agent start. Standing by for first request
+[03/22/22 11:06:24 -0500 Pritivis-MBP-2.attlocal.net (74374)] INFO : No configuration file loaded, and no configuration found in ENV. For assistance configuring Scout, visit https://docs.scoutapm.com/#ruby-configuration-options
+[03/22/22 11:06:24 -0500 Pritivis-MBP-2.attlocal.net (74374)] INFO : Scout Agent [4.1.2] Initialized
+[03/22/22 11:06:24 -0500 Pritivis-MBP-2.attlocal.net (74374)] INFO : Not Loading Instruments
+[03/22/22 11:06:24 -0500 Pritivis-MBP-2.attlocal.net (74374)] INFO : Scout Agent [4.1.2] Installed
+[03/22/22 11:06:24 -0500 Pritivis-MBP-2.attlocal.net (74374)] INFO : Monitoring isn't enabled for the [development] environment.
+[03/22/22 11:06:24 -0500 Pritivis-MBP-2.attlocal.net (74372)] INFO : No configuration file loaded, and no configuration found in ENV. For assistance configuring Scout, visit https://docs.scoutapm.com/#ruby-configuration-options
+[03/22/22 11:06:24 -0500 Pritivis-MBP-2.attlocal.net (74372)] INFO : Scout Agent [4.1.2] Initialized
+[03/22/22 11:06:24 -0500 Pritivis-MBP-2.attlocal.net (74372)] INFO : Not Loading Instruments
+[03/22/22 11:06:24 -0500 Pritivis-MBP-2.attlocal.net (74372)] INFO : Scout Agent [4.1.2] Installed
+[03/22/22 11:06:24 -0500 Pritivis-MBP-2.attlocal.net (74372)] INFO : Monitoring isn't enabled for the [development] environment.
+[03/22/22 11:06:24 -0500 Pritivis-MBP-2.attlocal.net (74372)] INFO : Deferring agent start. Standing by for first request
+[03/26/22 21:46:46 -0500 Pritivis-MBP-2.attlocal.net (71486)] INFO : No configuration file loaded, and no configuration found in ENV. For assistance configuring Scout, visit https://docs.scoutapm.com/#ruby-configuration-options
+[03/26/22 21:46:46 -0500 Pritivis-MBP-2.attlocal.net (71484)] INFO : No configuration file loaded, and no configuration found in ENV. For assistance configuring Scout, visit https://docs.scoutapm.com/#ruby-configuration-options
+[03/26/22 21:46:46 -0500 Pritivis-MBP-2.attlocal.net (71486)] INFO : Scout Agent [4.1.2] Initialized
+[03/26/22 21:46:46 -0500 Pritivis-MBP-2.attlocal.net (71484)] INFO : Scout Agent [4.1.2] Initialized
+[03/26/22 21:46:46 -0500 Pritivis-MBP-2.attlocal.net (71486)] INFO : Not Loading Instruments
+[03/26/22 21:46:46 -0500 Pritivis-MBP-2.attlocal.net (71484)] INFO : Not Loading Instruments
+[03/26/22 21:46:46 -0500 Pritivis-MBP-2.attlocal.net (71486)] INFO : Scout Agent [4.1.2] Installed
+[03/26/22 21:46:46 -0500 Pritivis-MBP-2.attlocal.net (71484)] INFO : Scout Agent [4.1.2] Installed
+[03/26/22 21:46:46 -0500 Pritivis-MBP-2.attlocal.net (71486)] INFO : Monitoring isn't enabled for the [development] environment.
+[03/26/22 21:46:46 -0500 Pritivis-MBP-2.attlocal.net (71484)] INFO : Monitoring isn't enabled for the [development] environment.
+[03/26/22 21:46:46 -0500 Pritivis-MBP-2.attlocal.net (71484)] INFO : Deferring agent start. Standing by for first request
