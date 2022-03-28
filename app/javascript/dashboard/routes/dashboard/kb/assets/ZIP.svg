@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="62.163" height="83.096" viewBox="0 0 62.163 83.096">
+  <g id="Group_373" data-name="Group 373" transform="translate(-1430.595 -810.666)">
+    <path id="Path_56" data-name="Path 56" d="M8.117,0H26.5c4.483,0,22.037,15.555,22.037,20.038l.162,44.9a8.117,8.117,0,0,1-8.117,8.117H8.117A8.117,8.117,0,0,1,0,64.938V8.117A8.117,8.117,0,0,1,8.117,0Z" transform="translate(1443.459 820.283)" fill="#fa66a4" opacity="0.3"/>
+    <g id="Icon_feather-file" data-name="Icon feather-file" transform="translate(1432.095 812.166)">
+      <path id="Path_52" data-name="Path 52" d="M39.279,3H13.4C9.311,3,6,6.586,6,11.01V75.086c0,4.424,3.311,8.01,7.4,8.01H57.768c4.084,0,7.4-3.586,7.4-8.01V31.033Z" transform="translate(-6 -3)" fill="none" stroke="#fa66a4" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <path id="Path_53" data-name="Path 53" d="M19.5,3V31.033H47.533" transform="translate(11.629 -3)" fill="none" stroke="#fa66a4" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    </g>
+    <text id="ZIP" transform="translate(1446.903 873.951)" fill="#fa66a4" font-size="17" font-family="LouisGeorgeCafe-Bold, Louis George Cafe" font-weight="700" letter-spacing="0.05em"><tspan x="0" y="0">ZIP</tspan></text>
+    <path id="Path_56-2" data-name="Path 56" d="M8.117,0H26.5c4.483,0,22.037,15.555,22.037,20.038l.162,44.9a8.117,8.117,0,0,1-8.117,8.117H8.117A8.117,8.117,0,0,1,0,64.938V8.117A8.117,8.117,0,0,1,8.117,0Z" transform="translate(1443.459 820.283)" fill="#fa66a4" opacity="0.3"/>
+    <g id="Icon_feather-file-2" data-name="Icon feather-file" transform="translate(1432.095 812.166)">
+      <path id="Path_52-2" data-name="Path 52" d="M39.279,3H13.4C9.311,3,6,6.586,6,11.01V75.086c0,4.424,3.311,8.01,7.4,8.01H57.768c4.084,0,7.4-3.586,7.4-8.01V31.033Z" transform="translate(-6 -3)" fill="none" stroke="#fa66a4" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <path id="Path_53-2" data-name="Path 53" d="M19.5,3V31.033H47.533" transform="translate(11.629 -3)" fill="none" stroke="#fa66a4" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    </g>
+    <text id="ZIP-2" data-name="ZIP" transform="translate(1446.903 873.951)" fill="#fa66a4" font-size="17" font-family="LouisGeorgeCafe-Bold, Louis George Cafe" font-weight="700" letter-spacing="0.05em"><tspan x="0" y="0">ZIP</tspan></text>
+  </g>
+</svg>
