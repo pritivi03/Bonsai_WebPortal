@@ -34,6 +34,7 @@ import attributes from './modules/attributes';
 import automations from './modules/automations';
 import customViews from './modules/customViews';
 
+
 Vue.use(Vuex);
 export default new Vuex.Store({
   modules: {

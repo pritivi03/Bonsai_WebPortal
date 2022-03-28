@@ -365,3 +365,69 @@
 [03/26/22 21:46:46 -0500 Pritivis-MBP-2.attlocal.net (71486)] INFO : Monitoring isn't enabled for the [development] environment.
 [03/26/22 21:46:46 -0500 Pritivis-MBP-2.attlocal.net (71484)] INFO : Monitoring isn't enabled for the [development] environment.
 [03/26/22 21:46:46 -0500 Pritivis-MBP-2.attlocal.net (71484)] INFO : Deferring agent start. Standing by for first request
+[03/26/22 21:49:33 -0500 Pritivis-MBP-2.attlocal.net (71749)] INFO : No configuration file loaded, and no configuration found in ENV. For assistance configuring Scout, visit https://docs.scoutapm.com/#ruby-configuration-options
+[03/26/22 21:49:33 -0500 Pritivis-MBP-2.attlocal.net (71749)] INFO : Scout Agent [4.1.2] Initialized
+[03/26/22 21:49:33 -0500 Pritivis-MBP-2.attlocal.net (71749)] INFO : Not Loading Instruments
+[03/26/22 21:49:33 -0500 Pritivis-MBP-2.attlocal.net (71749)] INFO : Scout Agent [4.1.2] Installed
+[03/26/22 21:49:33 -0500 Pritivis-MBP-2.attlocal.net (71749)] INFO : Monitoring isn't enabled for the [development] environment.
+[03/26/22 21:49:33 -0500 Pritivis-MBP-2.attlocal.net (71749)] INFO : Deferring agent start. Standing by for first request
+[03/26/22 21:49:33 -0500 Pritivis-MBP-2.attlocal.net (71751)] INFO : No configuration file loaded, and no configuration found in ENV. For assistance configuring Scout, visit https://docs.scoutapm.com/#ruby-configuration-options
+[03/26/22 21:49:33 -0500 Pritivis-MBP-2.attlocal.net (71751)] INFO : Scout Agent [4.1.2] Initialized
+[03/26/22 21:49:33 -0500 Pritivis-MBP-2.attlocal.net (71751)] INFO : Not Loading Instruments
+[03/26/22 21:49:33 -0500 Pritivis-MBP-2.attlocal.net (71751)] INFO : Scout Agent [4.1.2] Installed
+[03/26/22 21:49:33 -0500 Pritivis-MBP-2.attlocal.net (71751)] INFO : Monitoring isn't enabled for the [development] environment.
+[03/26/22 21:53:58 -0500 Pritivis-MBP-2.attlocal.net (71991)] INFO : No configuration file loaded, and no configuration found in ENV. For assistance configuring Scout, visit https://docs.scoutapm.com/#ruby-configuration-options
+[03/26/22 21:53:58 -0500 Pritivis-MBP-2.attlocal.net (71991)] INFO : Scout Agent [4.1.2] Initialized
+[03/26/22 21:53:58 -0500 Pritivis-MBP-2.attlocal.net (71991)] INFO : Not Loading Instruments
+[03/26/22 21:53:58 -0500 Pritivis-MBP-2.attlocal.net (71991)] INFO : Scout Agent [4.1.2] Installed
+[03/26/22 21:53:58 -0500 Pritivis-MBP-2.attlocal.net (71991)] INFO : Monitoring isn't enabled for the [development] environment.
+[03/26/22 21:53:58 -0500 Pritivis-MBP-2.attlocal.net (71991)] INFO : Deferring agent start. Standing by for first request
+[03/26/22 21:53:58 -0500 Pritivis-MBP-2.attlocal.net (71993)] INFO : No configuration file loaded, and no configuration found in ENV. For assistance configuring Scout, visit https://docs.scoutapm.com/#ruby-configuration-options
+[03/26/22 21:53:58 -0500 Pritivis-MBP-2.attlocal.net (71993)] INFO : Scout Agent [4.1.2] Initialized
+[03/26/22 21:53:58 -0500 Pritivis-MBP-2.attlocal.net (71993)] INFO : Not Loading Instruments
+[03/26/22 21:53:58 -0500 Pritivis-MBP-2.attlocal.net (71993)] INFO : Scout Agent [4.1.2] Installed
+[03/26/22 21:53:58 -0500 Pritivis-MBP-2.attlocal.net (71993)] INFO : Monitoring isn't enabled for the [development] environment.
+[03/26/22 21:58:04 -0500 Pritivis-MBP-2.attlocal.net (72286)] INFO : No configuration file loaded, and no configuration found in ENV. For assistance configuring Scout, visit https://docs.scoutapm.com/#ruby-configuration-options
+[03/26/22 21:58:04 -0500 Pritivis-MBP-2.attlocal.net (72286)] INFO : Scout Agent [4.1.2] Initialized
+[03/26/22 21:58:04 -0500 Pritivis-MBP-2.attlocal.net (72286)] INFO : Not Loading Instruments
+[03/26/22 21:58:04 -0500 Pritivis-MBP-2.attlocal.net (72286)] INFO : Scout Agent [4.1.2] Installed
+[03/26/22 21:58:04 -0500 Pritivis-MBP-2.attlocal.net (72286)] INFO : Monitoring isn't enabled for the [development] environment.
+[03/26/22 21:58:04 -0500 Pritivis-MBP-2.attlocal.net (72286)] INFO : Deferring agent start. Standing by for first request
+[03/26/22 21:58:04 -0500 Pritivis-MBP-2.attlocal.net (72288)] INFO : No configuration file loaded, and no configuration found in ENV. For assistance configuring Scout, visit https://docs.scoutapm.com/#ruby-configuration-options
+[03/26/22 21:58:04 -0500 Pritivis-MBP-2.attlocal.net (72288)] INFO : Scout Agent [4.1.2] Initialized
+[03/26/22 21:58:04 -0500 Pritivis-MBP-2.attlocal.net (72288)] INFO : Not Loading Instruments
+[03/26/22 21:58:04 -0500 Pritivis-MBP-2.attlocal.net (72288)] INFO : Scout Agent [4.1.2] Installed
+[03/26/22 21:58:04 -0500 Pritivis-MBP-2.attlocal.net (72288)] INFO : Monitoring isn't enabled for the [development] environment.
+[03/26/22 21:59:36 -0500 Pritivis-MBP-2.attlocal.net (72426)] INFO : No configuration file loaded, and no configuration found in ENV. For assistance configuring Scout, visit https://docs.scoutapm.com/#ruby-configuration-options
+[03/26/22 21:59:36 -0500 Pritivis-MBP-2.attlocal.net (72426)] INFO : Scout Agent [4.1.2] Initialized
+[03/26/22 21:59:36 -0500 Pritivis-MBP-2.attlocal.net (72426)] INFO : Not Loading Instruments
+[03/26/22 21:59:36 -0500 Pritivis-MBP-2.attlocal.net (72426)] INFO : Scout Agent [4.1.2] Installed
+[03/26/22 21:59:36 -0500 Pritivis-MBP-2.attlocal.net (72426)] INFO : Monitoring isn't enabled for the [development] environment.
+[03/26/22 21:59:36 -0500 Pritivis-MBP-2.attlocal.net (72426)] INFO : Deferring agent start. Standing by for first request
+[03/26/22 21:59:36 -0500 Pritivis-MBP-2.attlocal.net (72428)] INFO : No configuration file loaded, and no configuration found in ENV. For assistance configuring Scout, visit https://docs.scoutapm.com/#ruby-configuration-options
+[03/26/22 21:59:36 -0500 Pritivis-MBP-2.attlocal.net (72428)] INFO : Scout Agent [4.1.2] Initialized
+[03/26/22 21:59:36 -0500 Pritivis-MBP-2.attlocal.net (72428)] INFO : Not Loading Instruments
+[03/26/22 21:59:36 -0500 Pritivis-MBP-2.attlocal.net (72428)] INFO : Scout Agent [4.1.2] Installed
+[03/26/22 21:59:36 -0500 Pritivis-MBP-2.attlocal.net (72428)] INFO : Monitoring isn't enabled for the [development] environment.
+[03/26/22 22:34:00 -0500 Pritivis-MBP-2.attlocal.net (74142)] INFO : No configuration file loaded, and no configuration found in ENV. For assistance configuring Scout, visit https://docs.scoutapm.com/#ruby-configuration-options
+[03/26/22 22:34:00 -0500 Pritivis-MBP-2.attlocal.net (74142)] INFO : Scout Agent [4.1.2] Initialized
+[03/26/22 22:34:00 -0500 Pritivis-MBP-2.attlocal.net (74142)] INFO : Not Loading Instruments
+[03/26/22 22:34:00 -0500 Pritivis-MBP-2.attlocal.net (74142)] INFO : Scout Agent [4.1.2] Installed
+[03/26/22 22:34:00 -0500 Pritivis-MBP-2.attlocal.net (74142)] INFO : Monitoring isn't enabled for the [development] environment.
+[03/26/22 22:34:00 -0500 Pritivis-MBP-2.attlocal.net (74142)] INFO : Deferring agent start. Standing by for first request
+[03/26/22 22:34:00 -0500 Pritivis-MBP-2.attlocal.net (74144)] INFO : No configuration file loaded, and no configuration found in ENV. For assistance configuring Scout, visit https://docs.scoutapm.com/#ruby-configuration-options
+[03/26/22 22:34:00 -0500 Pritivis-MBP-2.attlocal.net (74144)] INFO : Scout Agent [4.1.2] Initialized
+[03/26/22 22:34:00 -0500 Pritivis-MBP-2.attlocal.net (74144)] INFO : Not Loading Instruments
+[03/26/22 22:34:00 -0500 Pritivis-MBP-2.attlocal.net (74144)] INFO : Scout Agent [4.1.2] Installed
+[03/26/22 22:34:00 -0500 Pritivis-MBP-2.attlocal.net (74144)] INFO : Monitoring isn't enabled for the [development] environment.
+[03/26/22 22:42:11 -0500 Pritivis-MBP-2.attlocal.net (75016)] INFO : No configuration file loaded, and no configuration found in ENV. For assistance configuring Scout, visit https://docs.scoutapm.com/#ruby-configuration-options
+[03/26/22 22:42:11 -0500 Pritivis-MBP-2.attlocal.net (75016)] INFO : Scout Agent [4.1.2] Initialized
+[03/26/22 22:42:11 -0500 Pritivis-MBP-2.attlocal.net (75016)] INFO : Not Loading Instruments
+[03/26/22 22:42:11 -0500 Pritivis-MBP-2.attlocal.net (75016)] INFO : Scout Agent [4.1.2] Installed
+[03/26/22 22:42:11 -0500 Pritivis-MBP-2.attlocal.net (75016)] INFO : Monitoring isn't enabled for the [development] environment.
+[03/26/22 22:42:11 -0500 Pritivis-MBP-2.attlocal.net (75016)] INFO : Deferring agent start. Standing by for first request
+[03/26/22 22:42:11 -0500 Pritivis-MBP-2.attlocal.net (75018)] INFO : No configuration file loaded, and no configuration found in ENV. For assistance configuring Scout, visit https://docs.scoutapm.com/#ruby-configuration-options
+[03/26/22 22:42:11 -0500 Pritivis-MBP-2.attlocal.net (75018)] INFO : Scout Agent [4.1.2] Initialized
+[03/26/22 22:42:11 -0500 Pritivis-MBP-2.attlocal.net (75018)] INFO : Not Loading Instruments
+[03/26/22 22:42:11 -0500 Pritivis-MBP-2.attlocal.net (75018)] INFO : Scout Agent [4.1.2] Installed
+[03/26/22 22:42:11 -0500 Pritivis-MBP-2.attlocal.net (75018)] INFO : Monitoring isn't enabled for the [development] environment.

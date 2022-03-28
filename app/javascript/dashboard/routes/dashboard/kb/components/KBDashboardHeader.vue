@@ -26,7 +26,7 @@
             {{ $t('CONTACTS_PAGE.SEARCH_BUTTON') }}
           </woot-button>
         </div>
-        <woot-button
+        <!-- <woot-button
           v-if="hasActiveSegments"
           class="margin-right-small clear"
           color-scheme="alert"
@@ -34,21 +34,22 @@
           @click="onToggleDeleteSegmentsModal"
         >
           {{ $t('CONTACTS_PAGE.FILTER_CONTACTS_DELETE') }}
-        </woot-button>
+        </woot-button> -->
         <div v-if="!hasActiveSegments" class="filters__button-wrap">
           <div v-if="hasAppliedFilters" class="filters__applied-indicator" />
           <woot-button
             class="margin-right-small clear"
-            color-scheme="secondary"
+            color-scheme="alert"
             data-testid="create-new-contact"
-            icon="filter"
-            @click="onToggleFilter"
+            icon="delete"
+            @click="deleteClicked"
+            :disabled="deleteDisabled"
           >
-            {{ $t('CONTACTS_PAGE.FILTER_CONTACTS') }}
+          Delete
           </woot-button>
         </div>
 
-        <woot-button
+        <!-- <woot-button
           v-if="hasAppliedFilters && !hasActiveSegments"
           class="margin-right-small clear"
           color-scheme="alert"
@@ -57,8 +58,8 @@
           @click="onToggleSegmentsModal"
         >
           {{ $t('CONTACTS_PAGE.FILTER_CONTACTS_SAVE') }}
-        </woot-button>
-        <woot-button
+        </woot-button> -->
+        <!-- <woot-button
           class="margin-right-small clear"
           color-scheme="success"
           icon="person-add"
@@ -66,16 +67,20 @@
           @click="onToggleCreate"
         >
           {{ $t('CREATE_CONTACT.BUTTON_LABEL') }}
-        </woot-button>
+        </woot-button> -->
+          <woot-button
+            color-scheme="info"
+            class="clear"
+            @click="onToggleImport"
+            style="display: flex; align-items:center; justify-content:center;"
+            icon="arrow-download"
+            :disabled="downloadDisabled"
+          >
+            <!-- <MdCloudDownloadIcon /> -->
+            Download
+          </woot-button>
 
-        <woot-button
-          color-scheme="info"
-          icon="upload"
-          class="clear"
-          @click="onToggleImport"
-        >
-          {{ $t('IMPORT_CONTACTS.BUTTON_LABEL') }}
-        </woot-button>
+
         
       </div>
     </div>
@@ -85,6 +90,7 @@
 <script>
 import { mapGetters } from 'vuex';
 import AccordionItem from "../../../../../dashboard/components/Accordion/AccordionItem.vue"
+import MdCloudDownloadIcon from 'vue-ionicons/dist/md-cloud-download.vue'
 
 export default {
   props: {
@@ -120,6 +126,16 @@ export default {
       type: Function,
       default: () => {},
     },
+    deleteDisabled: {
+      type: Boolean
+    },
+    downloadDisabled: {
+      type: Boolean
+    },
+    deleteClicked: {
+      type: Function,
+      default: () => {},
+    }
   },
   data() {
     return {
@@ -143,7 +159,7 @@ export default {
     },
   },
   components: {
-    AccordionItem
+    MdCloudDownloadIcon    
   },
   methods: {
     onToggleSegmentsModal() {

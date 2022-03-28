@@ -103,8 +103,8 @@ export default {
             var url = this.api + "kb/getPresignedURL?file_path=" + filePath + "&url_type=POST"
             const response = await fetch(url)
             const jsonResponse = await response.json()
-            console.log(jsonResponse["post_url"])
-            return jsonResponse["post_url"]
+            console.log(jsonResponse["body"]["post_url"])
+            return jsonResponse["body"]["post_url"]
         },
         async performUpload(url, uploadObject, file, index) {
             console.log(url)
@@ -227,7 +227,7 @@ export default {
                     "company_id": self.accountId,
                     "s3_url": "NONE"
                 }
-                var url = self.api + "kb/addFile"
+                var url = self.api + "kb/addFileDB"
                 var xhr = new XMLHttpRequest();
                 xhr.open("POST", url, true);
 

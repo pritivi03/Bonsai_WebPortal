@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="62.163" height="83.096" viewBox="0 0 62.163 83.096">
+  <g id="Group_372" data-name="Group 372" transform="translate(-1430.595 -641.825)">
+    <path id="Path_55" data-name="Path 55" d="M8.117,0H26.5c4.483,0,22.037,15.555,22.037,20.038l.162,44.9a8.117,8.117,0,0,1-8.117,8.117H8.117A8.117,8.117,0,0,1,0,64.938V8.117A8.117,8.117,0,0,1,8.117,0Z" transform="translate(1443.459 650.904)" fill="#fa9627" opacity="0.3"/>
+    <g id="Icon_feather-file" data-name="Icon feather-file" transform="translate(1432.095 643.325)">
+      <path id="Path_52" data-name="Path 52" d="M39.279,3H13.4C9.311,3,6,6.586,6,11.01V75.086c0,4.424,3.311,8.01,7.4,8.01H57.768c4.084,0,7.4-3.586,7.4-8.01V31.033Z" transform="translate(-6 -3)" fill="none" stroke="#fa9627" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <path id="Path_53" data-name="Path 53" d="M19.5,3V31.033H47.533" transform="translate(11.629 -3)" fill="none" stroke="#fa9627" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    </g>
+    <text id="PDF" transform="translate(1443.459 703.49)" fill="#fa9627" font-size="15" font-family="LouisGeorgeCafe-Bold, Louis George Cafe" font-weight="700" letter-spacing="0.05em"><tspan x="0" y="0">PDF</tspan></text>
+    <path id="Path_55-2" data-name="Path 55" d="M8.117,0H26.5c4.483,0,22.037,15.555,22.037,20.038l.162,44.9a8.117,8.117,0,0,1-8.117,8.117H8.117A8.117,8.117,0,0,1,0,64.938V8.117A8.117,8.117,0,0,1,8.117,0Z" transform="translate(1443.459 650.904)" fill="#fa9627" opacity="0.3"/>
+    <g id="Icon_feather-file-2" data-name="Icon feather-file" transform="translate(1432.095 643.325)">
+      <path id="Path_52-2" data-name="Path 52" d="M39.279,3H13.4C9.311,3,6,6.586,6,11.01V75.086c0,4.424,3.311,8.01,7.4,8.01H57.768c4.084,0,7.4-3.586,7.4-8.01V31.033Z" transform="translate(-6 -3)" fill="none" stroke="#fa9627" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+      <path id="Path_53-2" data-name="Path 53" d="M19.5,3V31.033H47.533" transform="translate(11.629 -3)" fill="none" stroke="#fa9627" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    </g>
+    <text id="PDF-2" data-name="PDF" transform="translate(1443.459 703.49)" fill="#fa9627" font-size="15" font-family="LouisGeorgeCafe-Bold, Louis George Cafe" font-weight="700" letter-spacing="0.05em"><tspan x="0" y="0">PDF</tspan></text>
+  </g>
+</svg>

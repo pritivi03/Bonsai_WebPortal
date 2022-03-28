@@ -18,6 +18,8 @@ import AddAccountModal from '../dashboard/components/layout/sidebarComponents/Ad
 import WootSnackbarBox from './components/SnackbarContainer';
 import NetworkNotification from './components/NetworkNotification';
 import { accountIdFromPathname } from './helper/URLHelper';
+require('vue-ionicons/ionicons.css')
+
 
 export default {
   name: 'App',
