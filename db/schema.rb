@@ -54,6 +54,7 @@ ActiveRecord::Schema.define(version: 2022_02_13_061828) do
     t.integer "auto_resolve_duration"
     t.jsonb "limits", default: {}
     t.string "stripe_id"
+    t.string "sub_status"
   end
 
   create_table "action_mailbox_inbound_emails", force: :cascade do |t|

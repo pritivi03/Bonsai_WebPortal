@@ -10,7 +10,7 @@
             <p style="text-align: center;">The basics for personal projects, hobby sites, or experiments.</p>
 
             <div style="display: flex; flex-direction: row; align-items: center; margin-top: 30px;">
-                <h6 style="font-size: 30px; margin-right: 10px;">$25</h6>
+                <h6 style="font-size: 30px; margin-right: 10px;">$45</h6>
                 <p>/seat / month</p>
             </div>
 
@@ -30,7 +30,7 @@
             <p style="text-align: center;">The basics for personal projects, hobby sites, or experiments.</p>
 
             <div style="display: flex; flex-direction: row; align-items: center; margin-top: 30px;">
-                <h6 style="font-size: 30px; margin-right: 10px;">$125</h6>
+                <h6 style="font-size: 30px; margin-right: 10px;">$150</h6>
                 <p>/seat / month</p>
             </div>
 

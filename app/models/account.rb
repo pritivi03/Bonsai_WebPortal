@@ -10,6 +10,7 @@
 #  locale                :integer          default("en")
 #  name                  :string           not null
 #  settings_flags        :integer          default(0), not null
+#  sub_status            :string
 #  support_email         :string(100)
 #  created_at            :datetime         not null
 #  updated_at            :datetime         not null

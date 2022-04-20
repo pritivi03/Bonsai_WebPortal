@@ -1,5 +1,5 @@
 <template>
-    <div id="container">
+    <div id="container" style="overflow: auto;">
         <knowldege-header
             :onInputSearch="onSearchSubmit"
             :deleteDisabled="anyFilesSelected"
@@ -11,6 +11,7 @@
             :table-data="filteredTableData"
             :checkbox-option="checkboxOption"
             row-key-field-name="rowKey"
+            :virtual-scroll-option="virtualScrollOption"
         />
         <woot-modal
             :show="loading"
@@ -36,6 +37,74 @@
             </button>
             </div> -->
         </woot-modal>
+
+        <woot-modal
+            :show="showAnnotationModal"
+            noClose="true"
+            size="medium"
+        >
+            <woot-modal-header
+                :header-title="modalTitle"
+                :header-content="modalContent"
+            />
+            <div
+                style="display: flex; flex-direction: row; justify-content: center; margin: 30px;"
+            >
+                <form class="row" @submit.prevent="addAgent()" style="padding: 8px; ">
+                    <div class="medium-12 columns" style="height: 300px; box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5); padding: 15px;">
+                        <annotation-highlight 
+                            :text="textToRender" 
+                            :annotations="annotationsToHighlight"
+                            :highlightComponent="MyHighlightComponent"
+                            :highlightStyle="{
+                                backgroundColor: 'lightblue', 
+                                border: '1px solid lightblue',        
+                                borderRadius: '4px'
+                            }"
+                            style="font-size: 12px;"
+                        />
+                    </div>
+
+                    <!-- <div class="medium-1 columns" style="">
+                        
+                    </div>
+
+                    <div class="medium-7 columns" style="background-color: lightgray; border-radius: 8px; padding: 8px;">
+                        
+                    </div> -->
+                    
+                    <div class="modal-footer"  style="width: 100%; margin-top: 15px;">
+                        <div class="medium-12 columns" style="display: flex; flex-direction: row; justify-content: space-between; width: 100%;">
+                            <button class="button clear" @click.prevent="annotateButtonInModalClicked">
+                                Annotate
+                            </button>
+                            <div>
+                                <button class="button clear" @click.prevent="onClose">
+                                    Cancel
+                                </button>
+
+                                <woot-submit-button
+                                    button-text="Finish"
+                                />
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                </form>
+                
+            </div>
+            <!-- <div
+            class="modal-footer delete-item"
+            >
+            <button
+                class="button success large expanded nice"
+                @click="$emit('show-create-account-modal')"
+            >
+                {{ $t('CREATE_ACCOUNT.NEW_ACCOUNT') }}
+            </button>
+            </div> -->
+        </woot-modal>
     </div>
 </template>
 
@@ -45,13 +114,16 @@ import KnowldegeHeader from "./KBDashboardHeader.vue"
 import { mapGetters } from 'vuex';
 import { VeTable } from 'vue-easytable';
 import Spinner from "../../../../../shared/components/Spinner.vue"
+import { AnnotationHighlight } from 'vue-annotation-highlight'
+import MyHighlightComponent from "./MyHighlightComponent.vue"
 
 export default {
     components: {
         SettingsHeader,
         KnowldegeHeader,
         VeTable,
-        Spinner
+        Spinner,
+        "annotation-highlight": AnnotationHighlight,
     },
     computed: {
         ...mapGetters({
@@ -111,21 +183,6 @@ export default {
                     title: "Actions",
                     align: "center",
                     renderBodyCell: ({ row, column, rowIndex }, h) => {
-                        /*return (
-                            <div>
-                               <woot-button 
-                                    icon="edit" 
-                                    size="tiny"
-                                    v-tooltip="Annotate"
-                                    style="margin-right: 10px;"
-                                ></woot-button>
-                                <woot-button 
-                                    icon="eye-show" 
-                                    size="tiny"
-                                    v-tooltip="Preview"
-                                ></woot-button>
-                            </div>
-                        );*/
                         const self = this
                         return h('div', [
                             h('woot-button', {
@@ -167,10 +224,22 @@ export default {
                     console.log(isSelected, selectedRowKeys);
                 },
             },
+            fetchData: true,
             loading: false,
-            modalTitle: "",
-            modalContent: "",
-            searchText: ""
+            showAnnotationModal: false,
+            modalTitle: "Annotating XYZDocument.txt",
+            modalContent: "Highlight any part of the document and click on the 'Annotate' button. Click on an annotation to delete it.",
+            searchText: "",
+            textToRender: 'An annotation is extra information associated with a particular point in a document or other piece of information.',
+            annotationsToHighlight: [
+                { begin: 3, length: 10, source:'PRED', confidence:'0.9' },
+                { begin: 53, length: 16, source:'PRED', confidence:'0.7' }
+            ],
+            MyHighlightComponent: MyHighlightComponent,
+            virtualScrollOption: {
+                    enable: false,
+            },
+
         }
 
     },
@@ -249,11 +318,43 @@ export default {
             //call the backend to request a download url for this file
             var api = "http://127.0.0.1:5000/"
             var thisFile = this.filteredTableData[index]
-            var filePath = this.accountId + "/" + thisFile.name
-            var url = this.api + "kb/getPresignedURL?file_path=" + filePath + "&url_type=GET"
-            const response = await fetch(url)
+            var filePath = this.accountId + "/" + thisFile["file_name"]
+            var url = api + "kb/getPresignedURL?file_path=" + filePath + "&url_type=GET"
+            const response = await fetch(url).catch((error) => console.log(error))
             const jsonResponse = await response.json()
-            console.log(jsonResponse["get_url"])
+            var file_url = jsonResponse["body"]["get_url"]
+            //now take this 
+            var docs_viewer_url = "https://docs.google.com/viewer?url=" + encodeURIComponent(file_url)
+            window.open(docs_viewer_url, "_blank")
+        },
+        getAnnotationColor: function(annotation) {
+            const classToColor = {
+                'process': '#f44283',
+                'tool': '#41acf4',
+            }
+            const color = classToColor[annotation.class]
+            return color  // Must return hex value
+        },
+        getSpanClasses: function(span) {
+            const classes = ['my-span-class']
+            const annotationIds = span.annotationIds
+            if (annotationIds.length > 0) {
+                classes.push('annotated')
+            }
+            return classes
+        },
+        onClose: function () {
+            this.showAnnotationModal = false;
+        },
+        annotateButtonInModalClicked: function() {
+            console.log(window.getSelection())
+            var selection = window.getSelection()
+            var thisBit = window.getSelection()['anchorNode']['textContent']
+            var start = this.textToRender.indexOf(thisBit) + selection['anchorOffset'];
+            var end = this.textToRender.indexOf(thisBit) + selection['extentOffset']
+            this.annotationsToHighlight.push({begin: start, length: end-start+1, question: this.textToRender.substring(start, end+1)})
+            console.log(this.textToRender.substring(start, end+1))
+            //use anchorNode and anchorOffset in getSelection 
         }
     },
     mounted: function () {
@@ -262,25 +363,39 @@ export default {
         window.annotateClicked = this.annotateClicked
         var api = "http://127.0.0.1:5000/"
         //var url = api + "knowledgebase?company_id=" + this.accountId
-        var url = api + "kb/getFiles?company_id=" + this.accountId
-        const self = this;
-        fetch(url)
-        .then(function(response) {
-            return response.json();
-        })
-        .then(function(jsonResponse) {
-            var row_data = jsonResponse["body"].map((obj, index)=> ({ ...obj, rowKey: obj["file_id"]}))
-            self.tableData = row_data
-            self.filteredTableData = row_data
-            console.log(self.tableData)
-        });
+        if (this.fetchData) {
+            var url = api + "kb/getFiles?company_id=" + this.accountId
+            const self = this;
+            fetch(url)
+            .then(function(response) {
+                return response.json();
+            })
+            .then(function(jsonResponse) {
+                var row_data = jsonResponse["body"].map((obj, index)=> ({ ...obj, rowKey: obj["file_id"]}))
+                self.tableData = row_data
+                self.filteredTableData = row_data
+                console.log(self.tableData)
+            });
+        }
     }
 }
 </script>
 
-<style lang="sass" scoped>
+<style lang="scss" scoped>
 #container {
     width: 100%;
 }
+
+.my-span-class:hover {
+  outline: 1px solid black;
+}
+.annotated {
+  font-weight: bold;  
+}
+
+.modal-container {
+    width: 80rem !important;
+}
+
 
 </style>

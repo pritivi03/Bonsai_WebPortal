@@ -220,11 +220,8 @@ export default {
     },
 
     async onStarterPlan() {
-        //they have not paid for anything yet, this means they are on the free account
-
-        //set the effective period to free forever
         this.effectivePeriod = "Effective in continuity"
-        this.planPrice = "25"
+        this.planPrice = "45"
         this.currentPlan = "Starter"
 
         console.log(this.stripe_id)
@@ -248,8 +245,8 @@ export default {
           } else {
             var active_sub = resp["data"][0]
 
-            var planData = {"price_1KY3ErBxBilIm7SklJyAoKHA": "Starter Plan"}
-            var priceData = {"price_1KY3ErBxBilIm7SklJyAoKHA": 125}
+            var planData = {"price_1KY3ErBxBilIm7SklJyAoKHA": "Pro"}
+            var priceData = {"price_1KY3ErBxBilIm7SklJyAoKHA": 150}
 
             var sub_id = active_sub["plan"]["id"]
 
@@ -258,7 +255,7 @@ export default {
 
             this.effectivePeriod = "Effective from " + sub_start.toLocaleDateString() + " to " + sub_end.toLocaleDateString()
             this.planPrice = priceData[sub_id]
-            this.currentPlan = "Pro"
+            this.currentPlan = planData[sub_id]
 
             console.log(active_sub)
           }

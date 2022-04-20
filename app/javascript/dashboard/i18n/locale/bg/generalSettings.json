@@ -18,9 +18,9 @@
         "NOTE": "This ID is required if you are building an API based integration"
       },
       "NAME": {
-        "LABEL": "Account name",
-        "PLACEHOLDER": "Your account name",
-        "ERROR": "Please enter a valid account name"
+        "LABEL": "Company name",
+        "PLACEHOLDER": "Your company name",
+        "ERROR": "Please enter a valid company name"
       },
       "LANGUAGE": {
         "LABEL": "Site language (Beta)",
