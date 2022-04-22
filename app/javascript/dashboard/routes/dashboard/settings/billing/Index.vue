@@ -57,8 +57,9 @@
             <woot-button @click="openAddPopup" style="margin-top: 15px;">Add Payment Method</woot-button>
 
             <!-- payment method modal -->
-            <woot-modal :show.sync="showAddPopup" :on-close="hideAddPopup = false">
-              <!-- <vue-paycard :value-fields="valueFields" /> -->
+            <woot-modal :show="showAddPopup" :on-close="hideAddPopup = false">
+              <!-- <h1>hello, world</h1> -->
+              <vue-paycard :value-fields="valueFields" />
             </woot-modal>
         </div>
       </div>
@@ -81,14 +82,15 @@ import { mapGetters } from 'vuex';
 import alertMixin from 'shared/mixins/alertMixin';
 import configMixin from 'shared/mixins/configMixin';
 import accountMixin from '../../../../mixins/account';
-import AddPaymentMethod from './AddPaymentMethod';
+// import AddPaymentMethod from './AddPaymentMethod';
+import VuePaycard from "vue-paycard";
 import ky from "ky"
 const semver = require('semver');
 
 export default {
   mixins: [accountMixin, alertMixin, configMixin],
   components: {
-    AddPaymentMethod
+    VuePaycard
   },
   data() {
     return {

@@ -16,6 +16,7 @@ import WootWizard from 'components/ui/Wizard';
 import { sync } from 'vuex-router-sync';
 import Vuelidate from 'vuelidate';
 import VTooltip from 'v-tooltip';
+// import VuePaycard from "vue-paycard";
 import WootUiKit from '../dashboard/components';
 import App from '../dashboard/App';
 import i18n from '../dashboard/i18n';
@@ -61,6 +62,7 @@ Vue.use(VueRouter);
 Vue.use(VueI18n);
 Vue.use(WootUiKit);
 Vue.use(Vuelidate);
+// Vue.use(VuePaycard);
 Vue.use(VueFormulate, {
   rules: {
     JSON: ({ value }) => isJSONValid(value),

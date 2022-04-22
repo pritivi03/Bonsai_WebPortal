@@ -1,6 +1,6 @@
 <template>
     <div class="column content-box">
-      
+        <vue-paycard :value-fields="valueFields" />
     </div>
 </template>
 
