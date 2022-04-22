@@ -53,7 +53,13 @@
                 </tr>
                 
             </table>
-            <woot-button style="margin-top: 15px;">Add Payment Method</woot-button>
+
+            <woot-button @click="openAddPopup" style="margin-top: 15px;">Add Payment Method</woot-button>
+
+            <!-- payment method modal -->
+            <woot-modal :show.sync="showAddPopup" :on-close="hideAddPopup = false">
+              <!-- <vue-paycard :value-fields="valueFields" /> -->
+            </woot-modal>
         </div>
       </div>
 
@@ -75,13 +81,24 @@ import { mapGetters } from 'vuex';
 import alertMixin from 'shared/mixins/alertMixin';
 import configMixin from 'shared/mixins/configMixin';
 import accountMixin from '../../../../mixins/account';
+import AddPaymentMethod from './AddPaymentMethod';
 import ky from "ky"
 const semver = require('semver');
 
 export default {
   mixins: [accountMixin, alertMixin, configMixin],
+  components: {
+    AddPaymentMethod
+  },
   data() {
     return {
+      valueFields: {
+        cardName: "",
+        cardNumber: "",
+        cardMonth: "",
+        cardYear: "",
+        cardCvv: "",
+      },
       id: '',
       name: '',
       locale: 'en',
@@ -95,6 +112,7 @@ export default {
       planPrice: "",
       api: "http://127.0.0.1:5000/",
       currentPlan: "",
+      showAddPopup: false
     };
   },
   validations: {
@@ -155,7 +173,14 @@ export default {
     }
   },
   methods: {
+    openAddPopup() {
+      this.showAddPopup = true;
+    },
+    hideAddPopup() {
+      this.showAddPopup = false;
+    },
     async initializeAccount() {
+      // sets component state
       try {
         await this.$store.dispatch('accounts/get');
         const {
@@ -276,7 +301,7 @@ export default {
         pmObjects.push(paymentMethods[i]["card"])
       }
       this.paymentMethods = pmObjects
-      console.log(this.paymentMethods)
+      console.log(`payment methods: ${this.paymentMethods}`)
 
     }
   },
