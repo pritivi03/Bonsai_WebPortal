@@ -1,13 +1,13 @@
 {
-  "application.js": "/packs/js/application-f407336a0fbaf868aaab.js",
-  "application.js.map": "/packs/js/application-f407336a0fbaf868aaab.js.map",
+  "application.js": "/packs/js/application-9824672515b1200c1b47.js",
+  "application.js.map": "/packs/js/application-9824672515b1200c1b47.js.map",
   "entrypoints": {
     "application": {
       "js": [
-        "/packs/js/application-f407336a0fbaf868aaab.js"
+        "/packs/js/application-9824672515b1200c1b47.js"
       ],
       "js.map": [
-        "/packs/js/application-f407336a0fbaf868aaab.js.map"
+        "/packs/js/application-9824672515b1200c1b47.js.map"
       ]
     },
     "sdk": {
@@ -20,34 +20,34 @@
     },
     "superadmin_pages": {
       "js": [
-        "/packs/js/superadmin_pages-f407336a0fbaf868aaab.js"
+        "/packs/js/superadmin_pages-9824672515b1200c1b47.js"
       ],
       "js.map": [
-        "/packs/js/superadmin_pages-f407336a0fbaf868aaab.js.map"
+        "/packs/js/superadmin_pages-9824672515b1200c1b47.js.map"
       ]
     },
     "superadmin": {
       "js": [
-        "/packs/js/superadmin-f407336a0fbaf868aaab.js"
+        "/packs/js/superadmin-9824672515b1200c1b47.js"
       ],
       "js.map": [
-        "/packs/js/superadmin-f407336a0fbaf868aaab.js.map"
+        "/packs/js/superadmin-9824672515b1200c1b47.js.map"
       ]
     },
     "survey": {
       "js": [
-        "/packs/js/survey-f407336a0fbaf868aaab.js"
+        "/packs/js/survey-9824672515b1200c1b47.js"
       ],
       "js.map": [
-        "/packs/js/survey-f407336a0fbaf868aaab.js.map"
+        "/packs/js/survey-9824672515b1200c1b47.js.map"
       ]
     },
     "widget": {
       "js": [
-        "/packs/js/widget-f407336a0fbaf868aaab.js"
+        "/packs/js/widget-9824672515b1200c1b47.js"
       ],
       "js.map": [
-        "/packs/js/widget-f407336a0fbaf868aaab.js.map"
+        "/packs/js/widget-9824672515b1200c1b47.js.map"
       ]
     }
   },
@@ -136,12 +136,12 @@
   "media/widget/assets/images/typing.gif": "/packs/media/widget/assets/images/typing-6027d21b24f45e3377a729a55158f948.gif",
   "sdk.js": "/packs/js/sdk.js",
   "sdk.js.map": "/packs/js/sdk.js.map",
-  "superadmin.js": "/packs/js/superadmin-f407336a0fbaf868aaab.js",
-  "superadmin.js.map": "/packs/js/superadmin-f407336a0fbaf868aaab.js.map",
-  "superadmin_pages.js": "/packs/js/superadmin_pages-f407336a0fbaf868aaab.js",
-  "superadmin_pages.js.map": "/packs/js/superadmin_pages-f407336a0fbaf868aaab.js.map",
-  "survey.js": "/packs/js/survey-f407336a0fbaf868aaab.js",
-  "survey.js.map": "/packs/js/survey-f407336a0fbaf868aaab.js.map",
-  "widget.js": "/packs/js/widget-f407336a0fbaf868aaab.js",
-  "widget.js.map": "/packs/js/widget-f407336a0fbaf868aaab.js.map"
+  "superadmin.js": "/packs/js/superadmin-9824672515b1200c1b47.js",
+  "superadmin.js.map": "/packs/js/superadmin-9824672515b1200c1b47.js.map",
+  "superadmin_pages.js": "/packs/js/superadmin_pages-9824672515b1200c1b47.js",
+  "superadmin_pages.js.map": "/packs/js/superadmin_pages-9824672515b1200c1b47.js.map",
+  "survey.js": "/packs/js/survey-9824672515b1200c1b47.js",
+  "survey.js.map": "/packs/js/survey-9824672515b1200c1b47.js.map",
+  "widget.js": "/packs/js/widget-9824672515b1200c1b47.js",
+  "widget.js.map": "/packs/js/widget-9824672515b1200c1b47.js.map"
 }

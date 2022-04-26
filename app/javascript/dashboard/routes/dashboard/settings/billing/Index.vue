@@ -11,7 +11,7 @@
         <div class="columns small-9 medium-5">
           <label :class="{ error: $v.name.$error }">
             <h5>{{this.currentPlan}} Plan</h5>
-            <p>{{this.effectivePeriod}}</p>
+            <p>{{this.effectivePeriod}}</p> 
           </label>
           <label :class="{ error: $v.locale.$error }" style="margin-top: 15px;">
             <p>57 KB / 100 GB bandwidth</p>
@@ -56,8 +56,8 @@
 
             <woot-button @click="openAddPopup" style="margin-top: 15px;">Add Payment Method</woot-button>
 
-            <woot-modal :show="showAddPopup" :on-close="hideAddPopup">
-              <form-component />
+            <woot-modal :show="showAddPopup" :on-close="hideAddPopup" size="medium">
+              <form-component :customer_id="this.stripe_id" @submitted="hideAddPopup"/>
             </woot-modal>
         </div>
       </div>
