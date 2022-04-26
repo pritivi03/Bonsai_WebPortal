@@ -4,3 +4,4 @@ log/scout_apm.log
 tmp/pids/server.pid
 ./tmp/*
 /public/packs/*
+public/packs/manifest.json

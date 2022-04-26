@@ -190,7 +190,7 @@ export default {
   mounted() {
     if (!this.id) {
       this.initializeAccount();
-      this.customUpdateAccount("cus_L6psb9BMWj59BU")
+      this.customUpdateAccount("cus_L6WW3mnnQM6zxk")
       //this.customUpdateAccount("")
     }
   },
@@ -251,7 +251,8 @@ export default {
     async customUpdateAccount(id_update) {
       try {
         await this.$store.dispatch('accounts/update', {
-          stripe_id: id_update
+          stripe_id: id_update,
+          
         });
       } catch (error) {
         console.log(error)
